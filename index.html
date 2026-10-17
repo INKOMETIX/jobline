@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JOBLINE – Recrutement et communication professionnelle à Toamasina</title>
+<meta name="description" content="JOBLINE : recrutement et communication professionnelle à Toamasina. Offres d’emploi, affiches, pages Facebook, CV. Tarifs transparents, commande par WhatsApp.">
+<meta name="theme-color" content="#0b6b43">
+<style>
+:root{--ink:#10231a;--mut:#4a5c52;--g:#0b6b43;--gd:#084c30;--red:#c8281d;--paper:#f1f5ef;--ln:#d5dfd6;--sh:0 1px 2px rgba(16,35,26,.06),0 6px 18px rgba(16,35,26,.06)}
+*{box-sizing:border-box;margin:0}
+html{scroll-padding-top:76px}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:#fff;-webkit-text-size-adjust:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{line-height:1.2;letter-spacing:-.01em}
+.sprite{position:absolute;width:0;height:0}
+.wrap{width:min(1120px,100% - 32px);margin-inline:auto}
+.skip{position:absolute;left:-999px}
+.skip:focus{left:8px;top:8px;z-index:99;background:#fff;padding:8px 12px}
+:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.ic{width:1.3em;height:1.3em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+/* En-tête */
+.hd{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--ln);transition:box-shadow .3s}
+.hd.sc{box-shadow:0 4px 18px rgba(16,35,26,.1)}
+.bar{display:flex;align-items:center;gap:10px;min-height:64px}
+.brand{margin-right:auto;font-size:1.3rem;font-weight:800;color:var(--g)}
+nav{display:flex;gap:2px}
+nav a{padding:8px 12px;border-radius:8px;font-weight:600;color:var(--mut);transition:background .2s,color .2s}
+nav a:hover{background:var(--paper);color:var(--g)}
+#menu{display:none;place-items:center;width:44px;height:44px;border:0;border-radius:10px;background:var(--paper);color:var(--g);cursor:pointer}
+
+/* Boutons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 18px;border:2px solid var(--g);border-radius:10px;background:var(--g);color:#fff;font:inherit;font-weight:700;cursor:pointer;transition:transform .2s,background .2s,box-shadow .2s}
+.btn:hover{background:var(--gd);transform:translateY(-2px);box-shadow:0 6px 16px rgba(8,76,48,.3)}
+.btn:active{transform:none}
+.btn.line{background:#fff;color:var(--g)}
+.btn.line:hover{background:var(--paper)}
+
+/* Accueil */
+.hero{background:radial-gradient(rgba(255,255,255,.1) 1.3px,transparent 1.3px) 0 0/24px 24px,var(--g);color:#fff;padding:72px 0 84px;overflow:hidden}
+.hero .wrap{display:grid;gap:44px;align-items:center}
+@media(min-width:880px){.hero .wrap{grid-template-columns:1.15fr .85fr}}
+.hero h1{max-width:17ch;font-size:clamp(2rem,6.2vw,3.4rem);font-weight:800}
+.hero p{max-width:58ch;margin:18px 0 26px;font-size:1.05rem;line-height:1.7;color:#e3f1e8}
+.hero .wrap>div:first-child>*{animation:up .7s ease both}
+.hero p{animation-delay:.12s!important}
+.acts{display:flex;flex-wrap:wrap;gap:12px;animation-delay:.24s!important}
+.hero .wh{background:#fff;color:var(--g);border-color:#fff}
+.hero .wh:hover{background:var(--paper)}
+.hero .alt{background:transparent;border-color:#fff}
+.hero .alt:hover{background:rgba(255,255,255,.14);box-shadow:none}
+.slips{display:grid;gap:18px;width:100%;max-width:340px;justify-self:center}
+.slip{position:relative;padding:18px 18px 14px;border-radius:6px;background:#fff;color:var(--ink);box-shadow:0 8px 18px rgba(0,0,0,.22);transform:rotate(var(--r));animation:drop .7s cubic-bezier(.2,.8,.3,1.2) var(--d) both,sway 5s ease-in-out calc(var(--d) + 1s) infinite}
+@keyframes sway{50%{transform:translateY(-6px) rotate(var(--r))}}
+.slip b{display:block;font-size:1.05rem}
+.slip span{font-size:.9rem;color:var(--mut)}
+.slip:before,.svc:before{content:"";position:absolute;top:-6px;left:20px;width:12px;height:12px;border-radius:50%;background:var(--red);box-shadow:0 2px 3px rgba(0,0,0,.3)}
+.slip:before{left:50%}
+@keyframes up{from{opacity:0;transform:translateY(16px)}}
+@keyframes drop{from{opacity:0;transform:translateY(-30px) rotate(0)}}
+
+/* Sections */
+.sec{padding:72px 0}
+.tint{background:var(--paper)}
+h2{margin-bottom:12px;font-size:clamp(1.6rem,4.6vw,2.3rem);font-weight:800}
+h2:after{content:"";display:block;width:56px;height:4px;margin-top:10px;border-radius:2px;background:var(--red);transition:width .7s ease .2s}
+.js h2:not(.in):after{width:0}
+.lead{max-width:60ch;margin-bottom:20px;color:var(--mut)}
+.note{max-width:80ch;margin-top:32px;padding:14px 18px;border-left:4px solid var(--g);border-radius:6px;background:var(--paper);font-size:.95rem}
+.tint .note{background:#fff}
+.note .btn{margin-top:12px}
+
+/* Catégories et cartes */
+.chips{position:sticky;top:65px;z-index:10;display:flex;gap:8px;overflow-x:auto;padding:10px 2px 12px;background:var(--paper)}
+.chip{flex:none;padding:8px 14px;border:1px solid var(--ln);border-radius:999px;background:#fff;color:var(--mut);font:inherit;font-size:.9rem;font-weight:600;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.chip:hover{border-color:var(--g);color:var(--g)}
+.chip[aria-pressed=true]{background:var(--g);border-color:var(--g);color:#fff}
+.cat{margin-top:36px}
+.cat h3{display:flex;align-items:center;gap:10px;margin-bottom:20px;font-size:1.3rem;color:var(--g)}
+.cat h3:after{content:"";flex:1;height:2px;border-radius:1px;background:var(--ln);transform-origin:left;transition:transform .9s ease .2s}
+.js .cat h3:not(.in):after{transform:scaleX(0)}
+.cat h3 .ic{animation:bob 3.2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-3px)}}
+.grid{display:grid;gap:24px 16px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.card{padding:22px;border:1px solid var(--ln);border-radius:12px;background:#fff;box-shadow:var(--sh)}
+.svc{position:relative;display:flex;flex-direction:column;gap:6px;padding-top:26px;transition:transform .25s,box-shadow .25s,border-color .25s}
+.svc:hover{transform:translateY(-5px);border-color:var(--g);box-shadow:0 12px 24px rgba(16,35,26,.12)}
+.ico{display:grid;place-items:center;width:46px;height:46px;margin-bottom:4px;border-radius:10px;background:var(--paper);color:var(--g);transition:transform .3s,background .3s,color .3s}
+.svc:hover .ico{transform:rotate(-8deg) scale(1.08);background:var(--g);color:#fff}
+.svc h4{font-size:1.05rem}
+.svc p{font-size:.92rem;color:var(--mut)}
+.svc .du{align-self:flex-start;margin:4px 0 12px;padding:2px 10px;border-radius:999px;background:var(--paper);font-size:.82rem;font-weight:700;color:var(--g)}
+.svc .pr{margin-top:auto;padding-top:12px;border-top:1px dashed var(--ln);font-size:1.5rem;font-weight:800;color:var(--red);font-variant-numeric:tabular-nums;transform-origin:left;transition:transform .25s}
+.svc:hover .pr{transform:scale(1.06)}
+.svc .btn{margin-top:8px}
+
+/* Paiement et contact */
+.pay{grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin:20px 0}
+.pay .card{display:flex;flex-direction:column;align-items:flex-start;gap:6px;border-top:5px solid var(--g)}
+.pay .mv{border-top-color:#e8a317}
+.pay .ar{border-top-color:var(--red)}
+.card h3{display:flex;align-items:center;gap:8px;font-size:1.15rem}
+.num{font-size:1.6rem;font-weight:800;letter-spacing:.02em;font-variant-numeric:tabular-nums}
+.card .btn{margin-top:8px}
+.cg{grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:20px}
+.cg .card{display:flex;flex-direction:column;align-items:flex-start;gap:6px}
+
+/* Pied de page, boutons flottants, message */
+footer{padding:36px 0 96px;background:var(--ink);color:#d3e0d7}
+.ft{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px 40px}
+footer a{text-decoration:underline}
+footer a:hover{color:#fff}
+.fab{position:fixed;right:16px;z-index:15;display:grid;place-items:center;border-radius:50%;color:#fff;transition:transform .2s,opacity .3s,visibility .3s}
+#fw{bottom:16px;width:56px;height:56px;background:var(--g);box-shadow:0 6px 18px rgba(0,0,0,.28)}
+#fw:hover{transform:scale(1.08)}
+#fw .ic{width:28px;height:28px}
+#up{bottom:84px;width:44px;height:44px;background:var(--ink);opacity:0;visibility:hidden;transform:translateY(10px)}
+#up.show{opacity:1;visibility:visible;transform:none}
+.toast{position:fixed;left:50%;bottom:24px;z-index:30;padding:10px 18px;border-radius:999px;background:var(--ink);color:#fff;font-size:.95rem;opacity:0;transform:translate(-50%,20px);transition:opacity .3s,transform .3s;pointer-events:none}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* Apparition au défilement */
+.js .rv{opacity:0}
+.js .rv.in{opacity:1;animation:up .5s ease var(--d,0s) backwards}
+
+/* Écran de chargement */
+#ld{position:fixed;inset:0;z-index:100;display:none;place-items:center;background:radial-gradient(rgba(255,255,255,.1) 1.3px,transparent 1.3px) 0 0/24px 24px,var(--g);color:#fff;text-align:center;transition:opacity .6s,visibility .6s,transform .6s}
+.js #ld{display:grid}
+.lm,html[lang=mg] .lf{display:none}
+html[lang=mg] .lm{display:inline}
+#ld.out{opacity:0;visibility:hidden;transform:scale(1.05)}
+.lw{display:grid;justify-items:center;gap:22px;padding:24px}
+.lw .slip{--r:-3deg;padding:28px 32px 22px;animation:drop .8s cubic-bezier(.2,.8,.3,1.2) .1s both,sway 4s ease-in-out 1s infinite}
+.lw .slip .ic{width:56px;height:56px;color:var(--g)}
+.lw p{font-size:clamp(1.4rem,5.5vw,2rem);font-weight:800;animation:up .7s ease .7s both}
+.lb{display:block;width:min(220px,60vw);height:4px;border-radius:2px;background:rgba(255,255,255,.25);overflow:hidden}
+.lb u{display:block;height:100%;background:#fff;transform-origin:left;animation:fill 2.2s ease-in-out .3s both}
+@keyframes fill{from{transform:scaleX(0)}}
+.js body.ld{overflow:hidden}
+.js body.ld .hero *,.js body.ld .hero *:after{animation-play-state:paused}
+
+/* Accueil : effet machine à écrire, mot par mot (--t = instant d'apparition, --c = durée du curseur) */
+.hero .tw{animation:none!important}
+.tw .w{position:relative;animation:tw .01s steps(1) var(--t) backwards}
+.tw .w:after{content:"";position:absolute;left:100%;top:.14em;bottom:.1em;width:.07em;min-width:2px;margin-left:.12em;border-radius:1px;background:currentColor;opacity:0;animation:cur var(--c) steps(1) var(--t)}
+.tw .w.z:after{animation:blink .9s steps(1) var(--t) 5}
+@keyframes tw{from{opacity:0}}
+@keyframes cur{from{opacity:1}to{opacity:0}}
+@keyframes blink{0%{opacity:1}50%{opacity:0}}
+
+/* Page de description d'un service */
+.bk{display:inline-flex;align-items:center;margin-bottom:20px;font-weight:700;color:var(--g)}
+.bk:hover{text-decoration:underline}
+.sd{display:grid;gap:24px;grid-template-areas:"h" "o" "d"}
+.sd>header{grid-area:h}.sd>.od{grid-area:o}.sd>.dt{grid-area:d}
+.kc{display:flex;align-items:center;gap:12px;font-weight:700;color:var(--g)}
+.sd h1{margin:14px 0 12px;font-size:clamp(1.7rem,5.5vw,2.6rem);font-weight:800}
+.sd h1:focus{outline:0}
+.sd .du{display:inline-block;padding:2px 12px;border:1px solid var(--ln);border-radius:999px;background:#fff;font-size:.85rem;font-weight:700;color:var(--g)}
+.od{align-self:start;display:flex;flex-direction:column;gap:6px;border-top:5px solid var(--red)}
+.od .pr{font-size:2.3rem;font-weight:800;line-height:1.1;color:var(--red);font-variant-numeric:tabular-nums}
+.od .btn{width:100%;margin:10px 0 4px}
+.od .sm{font-size:.85rem;color:var(--mut)}
+.dt h3{margin:24px 0 8px;font-size:1.15rem;color:var(--g)}
+.dt p,.dt li{max-width:62ch}
+.dt ol{display:grid;gap:6px;padding-left:22px}
+.wi{display:inline-flex}
+
+/* Prix d'un service : compteur mécanique, impact, soulignement, surlignage */
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.dg{display:inline-block;height:1em;line-height:1;overflow:hidden;vertical-align:-.16em}
+.dg>span{display:block;transform:translateY(calc((var(--d) + 10)*-1em));animation:roll 1.1s cubic-bezier(.2,.9,.3,1.12) calc(.35s + var(--k)*.1s) backwards}
+.dg i{display:block;height:1em;font-style:normal}
+@keyframes roll{from{transform:none}}
+.od .pr{transform-origin:left;animation:land .6s ease calc(1.3s + var(--n)*.1s)}
+@keyframes land{40%{transform:scale(1.08);text-shadow:0 0 18px rgba(200,40,29,.35)}}
+.od .pr:after{content:"";display:block;height:4px;margin-top:8px;border-radius:2px;background:linear-gradient(90deg,var(--red),#e8a317);transform-origin:left;animation:ul .7s cubic-bezier(.2,.8,.2,1) calc(1.3s + var(--n)*.1s) backwards}
+@keyframes ul{from{transform:scaleX(0)}}
+.hl{padding:0 2px;background:linear-gradient(rgba(200,40,29,.16),rgba(200,40,29,.16)) 0 85%/100% .6em no-repeat;color:inherit;animation:mk .8s ease calc(1.3s + var(--n)*.1s) backwards}
+@keyframes mk{from{background-size:0 .6em}}
+body.sv #up{display:none}
+@media(min-width:860px){.sd{grid-template-columns:minmax(0,1.5fr) minmax(260px,1fr);grid-template-areas:"h o" "d o"}.od{position:sticky;top:88px}}
+
+/* JOBLINE, téléphones, réseaux sociaux */
+.brand{letter-spacing:.1em}
+.wm{margin-bottom:14px;font:800 clamp(2.6rem,12vw,5.4rem)/1 "Avenir Next",Montserrat,"Segoe UI",system-ui,sans-serif;letter-spacing:.14em;text-shadow:0 4px 0 rgba(0,0,0,.18)}
+.wm:after{content:"";display:block;width:72px;height:5px;margin-top:16px;border-radius:3px;background:var(--red)}
+.hero h1{max-width:30ch;font-size:clamp(1.45rem,4.2vw,2.2rem);font-weight:700;line-height:1.25}
+.tels{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 22px}
+.cg .tels{margin:0}
+.tel{display:inline-flex;align-items:center;gap:10px;max-width:100%;padding:7px 18px 7px 7px;border-radius:999px;background:#fff linear-gradient(105deg,transparent 40%,rgba(11,107,67,.16) 50%,transparent 60%) no-repeat 150% 0/250% 100%;color:var(--g);font-size:1.05rem;font-weight:800;letter-spacing:.04em;font-variant-numeric:tabular-nums;box-shadow:var(--sh);animation:shine 5s ease-in-out 1.5s infinite;transition:transform .25s,box-shadow .25s}
+.hero .tel{font-size:1.2rem}
+.tel:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 10px 24px rgba(0,0,0,.25)}
+.tel i{--hc:rgba(11,107,67,.5);display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--g);color:#fff;animation:halo 2.4s ease-out infinite}
+.tel:nth-child(2) i{--hc:rgba(200,40,29,.5);background:var(--red);animation-delay:1.2s}
+.tel .ic{animation:ring 4s ease-in-out infinite}
+.tel:nth-child(2) .ic{animation-delay:2s}
+@keyframes shine{50%,100%{background-position:-50% 0}}
+@keyframes halo{from{box-shadow:0 0 0 0 var(--hc)}to{box-shadow:0 0 0 14px transparent}}
+@keyframes ring{0%,70%,100%{transform:none}74%{transform:rotate(-18deg)}78%{transform:rotate(16deg)}82%{transform:rotate(-12deg)}86%{transform:rotate(8deg)}90%{transform:none}}
+.ml{font-weight:700;color:var(--g);overflow-wrap:anywhere}
+.ml:hover{text-decoration:underline}
+.soc{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;margin-top:24px;padding:0;list-style:none}
+.soc a{display:flex;flex-direction:column;align-items:center;gap:12px;padding:26px 12px;border:1px solid var(--ln);border-radius:14px;background:#fff;box-shadow:var(--sh);font-weight:700;transition:transform .3s,color .3s,background .3s,border-color .3s,box-shadow .3s}
+.soc .ic{width:42px;height:42px;animation:fl 3.2s ease-in-out calc(var(--i)*.4s) infinite}
+.soc a:hover{transform:translateY(-6px);border-color:transparent;color:#fff;box-shadow:0 14px 28px rgba(16,35,26,.22)}
+.soc a:hover .ic{animation:pop .6s ease}
+.soc .ig:hover{background:linear-gradient(45deg,#f09433,#dc2743 55%,#bc1888)}
+.soc .tt:hover{background:#000}
+.soc .wc:hover{background:#128c7e}
+.soc .fb:hover{background:#1877f2}
+@keyframes fl{50%{transform:translateY(-6px)}}
+@keyframes pop{40%{transform:scale(1.25) rotate(-10deg)}}
+.dt ul{display:grid;gap:6px;padding-left:22px}
+@media(max-width:760px){.tel{flex:1 1 100%}}
+
+/* Sélecteur de langue */
+.lg{display:inline-flex;align-items:center;gap:8px;padding:6px 12px 6px 8px;border:2px solid var(--ln);border-radius:999px;background:#fff;color:var(--g);font:inherit;font-size:.85rem;font-weight:800;cursor:pointer;transition:transform .2s,box-shadow .2s,border-color .2s}
+.lg:hover{transform:translateY(-2px);border-color:var(--g);box-shadow:var(--sh)}
+.flag{display:block;width:30px;height:20px;border-radius:3px;box-shadow:0 0 0 1px rgba(0,0,0,.18)}
+
+/* Mobile */
+@media(max-width:760px){
+ #menu{display:grid}
+ nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;padding:8px 16px 12px;background:#fff;border-bottom:1px solid var(--ln)}
+ nav.open{display:flex}
+ .sec{padding:52px 0}
+ .hero{padding:48px 0 60px}
+ .acts .btn{flex:1 1 100%}
+}
+
+/* Animations désactivées : contenu visible immédiatement */
+@media(prefers-reduced-motion:reduce){
+ *,:before,:after{animation:none!important;transition:none!important}
+ .js .rv{opacity:1}
+}
+</style>
+<script>document.documentElement.className="js";(function(){var v=null;try{v=localStorage.getItem("jl-lang")}catch(e){}if(v?v==="mg":window.name==="jl-lang:mg")document.documentElement.lang="mg"})()</script>
+</head>
+<body class="ld">
+<div id="ld" role="status"><div class="lw"><div class="slip"><svg class="ic" aria-hidden="true"><use href="#i-job"/></svg></div><p><span class="lf">Bienvenue sur JOBLINE</span><span class="lm">Tonga soa eto amin’ny JOBLINE</span></p><i class="lb"><u></u></i></div></div>
+<svg class="sprite" aria-hidden="true">
+<symbol id="i-job" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></symbol>
+<symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></symbol>
+<symbol id="i-img" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/></symbol>
+<symbol id="i-pen" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></symbol>
+<symbol id="i-box" viewBox="0 0 24 24"><path d="M21 8 12 3 3 8v8l9 5 9-5Z"/><path d="m3 8 9 5 9-5M12 13v8"/></symbol>
+<symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+<symbol id="i-ad" viewBox="0 0 24 24"><path d="m3 11 18-5v12L3 14v-3Z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></symbol>
+<symbol id="i-fb" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+<symbol id="i-wa" viewBox="0 0 24 24"><path d="M21 12a9 9 0 0 1-13.4 7.8L3 21l1.3-4.4A9 9 0 1 1 21 12Z"/><path d="M9 8.500c.4 2.600 3 5.200 5.800 5.800l1.200-1.500-2-1-1 .8c-.9-.5-1.600-1.200-2.100-2.100l.8-1-1-2Z"/></symbol>
+<symbol id="i-cv" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 13h8M8 17h8M8 9h2"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+<symbol id="i-cvlm" viewBox="0 0 24 24"><path d="M15 2H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2V6Z"/><path d="M15 2v4h4M3 7v13a2 2 0 0 0 2 2h10"/></symbol>
+<symbol id="i-up" viewBox="0 0 24 24"><path d="m5 15 7-7 7 7"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+<symbol id="i-pay" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.200 7-11a7 7 0 1 0-14 0c0 4.800 7 11 7 11Z"/><circle cx="12" cy="10" r="2.500"/></symbol>
+<symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></symbol>
+<symbol id="i-back" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+<symbol id="i-tel" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></symbol>
+<symbol id="i-ig" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.500"/><path d="M17.500 6.500h.01"/></symbol>
+<symbol id="i-tt" viewBox="0 0 24 24"><path d="M16 3v10.500a4.500 4.500 0 1 1-4.500-4.500"/><path d="M16 3a5 5 0 0 0 5 5"/></symbol>
+</svg>
+
+<a class="skip" href="#services">Aller aux services</a>
+
+<header class="hd">
+ <div class="wrap bar">
+  <a class="brand" href="#accueil">JOBLINE</a>
+  <nav id="nav" aria-label="Navigation principale">
+   <a href="#accueil">Accueil</a><a href="#services">Services</a><a href="#paiement">Paiement</a><a href="#contact">Contact</a><a href="#reseaux">Réseaux</a>
+  </nav>
+  <button id="lg" class="lg" type="button" aria-label="Passer le site en malgache" title="Malagasy"><svg class="flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#fff"/><rect x="10" width="20" height="10" fill="#fc3d32"/><rect x="10" y="10" width="20" height="10" fill="#007e3a"/></svg><span>MG</span></button>
+  <button id="menu" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav"><svg class="ic" aria-hidden="true"><use href="#i-menu"/></svg></button>
+ </div>
+</header>
+
+<main>
+<section id="accueil" class="hero">
+ <div class="wrap">
+  <div>
+   <div class="wm">JOBLINE</div>
+   <h1>Votre partenaire en recrutement et en communication professionnelle à Toamasina.</h1>
+   <p>JOBLINE vous accompagne dans vos besoins en recrutement et en communication professionnelle. Nous proposons des services adaptés aux entreprises et aux chercheurs d’emploi : publication d’offres d’emploi, création d’affiches professionnelles, gestion de pages Facebook, réception de CV et accompagnement des candidatures. Des prestations accessibles, des tarifs transparents et un service de proximité à Toamasina.</p>
+   <div class="tels" style="animation-delay:.18s"><a class="tel" href="tel:+261344572669"><i><svg class="ic" aria-hidden="true"><use href="#i-tel"/></svg></i>034 45 726 69</a><a class="tel" href="tel:+261331816442"><i><svg class="ic" aria-hidden="true"><use href="#i-tel"/></svg></i>033 18 164 42</a></div>
+    <div class="acts">
+    <a class="btn wh" data-wa href="#" role="button"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>Contacter sur WhatsApp</a>
+    <a class="btn alt" href="#services">Découvrir nos services</a>
+   </div>
+  </div>
+  <div class="slips" aria-hidden="true">
+   <div class="slip" style="--r:-3deg;--d:.5s"><b>Offre d’emploi</b><span>Publiée et diffusée</span></div>
+   <div class="slip" style="--r:2deg;--d:.7s"><b>Affiche professionnelle</b><span>Prête à partager</span></div>
+   <div class="slip" style="--r:-1.5deg;--d:.9s"><b>CV reçus</b><span>Candidatures accompagnées</span></div>
+  </div>
+ </div>
+</section>
+
+<section id="services" class="sec tint">
+ <div class="wrap">
+  <h2 class="rv">Nos services et tarifs</h2>
+  <div id="chips" class="chips" role="group" aria-label="Filtrer par catégorie"></div>
+  <div id="cats"></div>
+  <noscript><p class="note">Activez JavaScript pour afficher la liste des services et commander sur WhatsApp.</p></noscript>
+  <p class="note rv">Conditions : paiement avant publication ou prise en charge. L’accompagnement des candidats dure 30 jours et ne garantit ni entretien, ni appel de l’entreprise, ni embauche. Budget Facebook Ads non inclus. Épinglage selon disponibilité.</p>
+ </div>
+</section>
+
+<section id="paiement" class="sec">
+ <div class="wrap">
+  <h2 class="rv">Moyens de paiement</h2>
+  <div class="grid pay">
+   <article class="card mv rv">
+    <h3><svg class="ic" aria-hidden="true"><use href="#i-pay"/></svg>MVola</h3>
+    <p class="num">034 45 726 69</p><p>Titulaire : Landrice</p>
+    <button class="btn line" type="button" data-copy="0344572669"><svg class="ic" aria-hidden="true"><use href="#i-copy"/></svg>Copier le numéro</button>
+   </article>
+   <article class="card ar rv" style="--d:.1s">
+    <h3><svg class="ic" aria-hidden="true"><use href="#i-pay"/></svg>Airtel Money</h3>
+    <p class="num">033 18 164 42</p><p>Titulaire : Landrice</p>
+    <button class="btn line" type="button" data-copy="0331816442"><svg class="ic" aria-hidden="true"><use href="#i-copy"/></svg>Copier le numéro</button>
+   </article>
+  </div>
+  <div class="note rv"><p>Avant de payer, contactez-nous sur WhatsApp pour confirmer votre commande. Ce site n’effectue aucune transaction : il affiche seulement nos coordonnées de paiement.</p><a class="btn" data-wa="Bonjour, je souhaite confirmer ma commande avant de payer." href="#" role="button"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>Confirmer ma commande sur WhatsApp</a></div>
+ </div>
+</section>
+
+<section id="contact" class="sec tint">
+ <div class="wrap">
+  <h2 class="rv">Nous contacter</h2>
+  <div class="grid cg">
+   <article class="card rv"><h3><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg>Adresse</h3><p>Toamasina – Andranomadio, 11/43, Lot 114 C2.</p></article>
+   <article class="card rv" style="--d:.05s"><h3><svg class="ic" aria-hidden="true"><use href="#i-tel"/></svg>Téléphone</h3><div class="tels"><a class="tel" href="tel:+261344572669"><i><svg class="ic" aria-hidden="true"><use href="#i-tel"/></svg></i>034 45 726 69</a><a class="tel" href="tel:+261331816442"><i><svg class="ic" aria-hidden="true"><use href="#i-tel"/></svg></i>033 18 164 42</a></div></article>
+   <article class="card rv" style="--d:.08s"><h3><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg>E-mail</h3><a class="ml" href="mailto:jobline261@gmail.com">jobline261@gmail.com</a></article>
+   <article class="card rv" style="--d:.1s"><h3><a class="wi" data-wa href="#" role="button" aria-label="Ouvrir WhatsApp"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg></a>WhatsApp</h3><p>Écrivez-nous pour commander ou poser une question.</p><a class="btn" data-wa href="#" role="button">Écrire sur WhatsApp</a></article>
+   <article class="card rv" style="--d:.2s"><h3><svg class="ic" aria-hidden="true"><use href="#i-pay"/></svg>Paiement</h3><p>MVola : 034 45 726 69<br>Airtel Money : 033 18 164 42<br>Titulaire : Landrice</p><a class="btn line" href="#paiement">Détails du paiement</a></article>
+  </div>
+ </div>
+</section>
+<section id="reseaux" class="sec">
+ <div class="wrap">
+  <h2 class="rv">Suivez JOBLINE</h2>
+  <p class="lead rv">Retrouvez nos offres d’emploi, nos actualités et nos services sur nos réseaux officiels.</p>
+  <ul class="soc"><li style="--i:0"><a class="ig" href="https://instagram.com/rhrecru501" target="_blank" rel="noopener noreferrer" aria-label="Instagram de JOBLINE (nouvel onglet)"><svg class="ic" aria-hidden="true"><use href="#i-ig"/></svg>Instagram</a></li><li style="--i:1"><a class="tt" href="https://www.tiktok.com/@jobline501" target="_blank" rel="noopener noreferrer" aria-label="TikTok de JOBLINE (nouvel onglet)"><svg class="ic" aria-hidden="true"><use href="#i-tt"/></svg>TikTok</a></li><li style="--i:2"><a class="wc" href="https://whatsapp.com/channel/0029VbDektI9xVJaLCbdRr1s" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Channel de JOBLINE (nouvel onglet)"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp Channel</a></li><li style="--i:3"><a class="fb" href="https://www.facebook.com/profile.php?id=100083006987645" target="_blank" rel="noopener noreferrer" aria-label="Facebook de JOBLINE (nouvel onglet)"><svg class="ic" aria-hidden="true"><use href="#i-fb"/></svg>Facebook</a></li></ul>
+ </div>
+</section>
+</main>
+
+<section id="sp" class="sec tint" hidden><div id="spc" class="wrap"></div></section>
+
+<footer>
+ <div class="wrap ft">
+  <div><strong>JOBLINE</strong><br>Toamasina – Andranomadio, 11/43, Lot 114 C2.</div>
+  <div><a data-wa href="#" role="button">Contacter sur WhatsApp</a><br><a href="#services">Services et tarifs</a><br><a href="#paiement">Moyens de paiement</a></div>
+  <p>© <span id="y">2026</span> Jobline. Tous droits réservés.</p>
+ </div>
+</footer>
+
+<a id="up" class="fab" href="#accueil" aria-label="Revenir en haut de la page"><svg class="ic" aria-hidden="true"><use href="#i-up"/></svg></a>
+<a id="fw" class="fab" data-wa href="#" role="button" aria-label="Contacter sur WhatsApp"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg></a>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script>
+(() => {
+const $ = (s, r = document) => r.querySelector(s),
+  $$ = (s, r = document) => [...r.querySelectorAll(s)],
+  WA = 'https://wa.me/' + ['2613', '4457', '2669'].join(''),
+  wa = t => WA + '?text=' + encodeURIComponent(t),
+  ic = k => `<svg class="ic" aria-hidden="true"><use href="#i-${k}"/></svg>`;
+
+// Écran de chargement : 2,3 s minimum (0,9 s si animations réduites), puis l’accueil apparaît
+const ld = $('#ld'), t0 = performance.now(),
+  min = matchMedia('(prefers-reduced-motion:reduce)').matches ? 900 : 2300;
+let gone = false;
+const hideLd = () => {
+  if (gone) return;
+  gone = true;
+  ld.classList.add('out');
+  document.body.classList.remove('ld');
+  setTimeout(() => ld.remove(), 700);
+};
+const endLd = () => setTimeout(hideLd, Math.max(0, min - (performance.now() - t0)));
+document.readyState === 'complete' ? endLd() : addEventListener('load', endLd);
+setTimeout(hideLd, 6000);
+
+// Langue : français par défaut, malgache via le drapeau (choix mémorisé)
+let mg = document.documentElement.lang === 'mg';
+const M = {
+'Accueil':'Fiandohana','Services':'Serivisy','Paiement':'Fandoavana','Contact':'Fifandraisana','Réseaux':'Tambajotra',
+'Bienvenue sur JOBLINE':'Tonga soa eto amin’ny JOBLINE','Aller aux services':'Hijery ny serivisy',
+'Contacter sur WhatsApp':'Mifandraisa amin’ny WhatsApp','Découvrir nos services':'Jereo ny serivisinay',
+'Offre d’emploi':'Tolotra asa','Publiée et diffusée':'Navoaka sy nozarainay','Affiche professionnelle':'Afisy matihanina','Prête à partager':'Vonona hozaraina','CV reçus':'CV voaray','Candidatures accompagnées':'Fangatahana asa arahina',
+'Nos services et tarifs':'Ny serivisinay sy ny vidiny',
+'Conditions : paiement avant publication ou prise en charge. L’accompagnement des candidats dure 30 jours et ne garantit ni entretien, ni appel de l’entreprise, ni embauche. Budget Facebook Ads non inclus. Épinglage selon disponibilité.':'Fepetra: aloa ny vola alohan’ny famoahana na ny fanomanana. Mitohy 30 andro ny fanaraha-maso ny mpangataka asa ary tsy mampanantena ny fitsarana, ny antso avy amin’ny orinasa na ny fandraisana ho mpiasa. Tsy ao anatin’izany ny teti-bola Facebook Ads. Miankina amin’ny fisian’ny toerana ny fametrahana eo an-tampony.',
+'Moyens de paiement':'Fomba fandoavana','Titulaire : Landrice':'Tompon’ny kaonty: Landrice','Copier le numéro':'Adikao ny laharana',
+'Avant de payer, contactez-nous sur WhatsApp pour confirmer votre commande. Ce site n’effectue aucune transaction : il affiche seulement nos coordonnées de paiement.':'Alohan’ny handoavana, mifandraisa aminay amin’ny WhatsApp mba hanamafisana ny baikonao. Tsy manao fifanakalozana ity tranokala ity: aseho fotsiny eto ny fampahalalana momba ny fandoavana.',
+'Confirmer ma commande sur WhatsApp':'Hanamafy ny baiko amin’ny WhatsApp',
+'Nous contacter':'Mifandraisa aminay','Adresse':'Adiresy','Téléphone':'Telefaona','E-mail':'Mailaka',
+'Écrivez-nous pour commander ou poser une question.':'Soraty any aminay raha te hanao baiko na hanontany.','Écrire sur WhatsApp':'Manoratra amin’ny WhatsApp',
+'Détails du paiement':'Antsipiriany momba ny fandoavana','Suivez JOBLINE':'Araho ny JOBLINE',
+'Retrouvez nos offres d’emploi, nos actualités et nos services sur nos réseaux officiels.':'Hitanao ao amin’ny tambajotra ofisialinay ny tolotra asanay, ny vaovaonay ary ny serivisinay.',
+'Services et tarifs':'Serivisy sy vidiny','Jobline. Tous droits réservés.':'Jobline. Zo rehetra voatokana.',
+'Ouvrir le menu':'Sokafy ny menio','Navigation principale':'Menio fototra','Filtrer par catégorie':'Sivano araka ny sokajy','Revenir en haut de la page':'Miverina any ambony','Ouvrir WhatsApp':'Sokafy ny WhatsApp',
+'Instagram de JOBLINE (nouvel onglet)':'Instagram an’ny JOBLINE (tabilao vaovao)','TikTok de JOBLINE (nouvel onglet)':'TikTok an’ny JOBLINE (tabilao vaovao)','WhatsApp Channel de JOBLINE (nouvel onglet)':'WhatsApp Channel an’ny JOBLINE (tabilao vaovao)','Facebook de JOBLINE (nouvel onglet)':'Facebook an’ny JOBLINE (tabilao vaovao)',
+'Bonjour, je souhaite confirmer ma commande avant de payer.':'Salama, te hanamafy ny baiko alohan’ny handoavana aho.'
+},
+  TT = [document.title, 'JOBLINE – Fandraisana mpiasa sy serasera matihanina ao Toamasina'],
+  MD = [$('meta[name=description]').content, 'JOBLINE: fandraisana mpiasa sy serasera matihanina ao Toamasina. Tolotra asa, afisy, pejy Facebook, CV. Vidiny mazava, baiko amin’ny WhatsApp.'],
+  HT = [[$('.hero h1').textContent.trim(), $('.hero p').textContent.trim()],
+    ['Mpiara-miasa aminao amin’ny fandraisana mpiasa sy ny serasera matihanina ao Toamasina.',
+     'Manampy anao amin’ny filanao amin’ny fandraisana mpiasa sy ny serasera matihanina i JOBLINE. Manolotra serivisy mifanaraka amin’ny orinasa sy ny mpikaroka asa izahay: famoahana tolotra asa, famoronana afisy matihanina, fitantanana pejy Facebook, fandraisana CV ary fanaraha-maso ny fangatahana asa. Tolotra azo vidiana, vidiana mazava ary serivisy akaiky anao ao Toamasina.']];
+
+// Effet machine à écrire : chaque mot du titre puis du paragraphe d’accueil apparaît à son tour
+const typeHero = tx => {
+  let t = .3;
+  const seq = [];
+  [['h1', .13, .014], ['p', .06, .007]].forEach(([s, a, b], i) => {
+    const el = $('.hero ' + s);
+    el.classList.add('tw');
+    seq.push([el, tx[i].split(/\s+/).map(w => {
+      const r = { w, t };
+      t += a + w.length * b + (/[.!?]$/.test(w) ? .35 : /[,;:]$/.test(w) ? .15 : 0);
+      return r;
+    })]);
+  });
+  const flat = seq.flatMap(([, ws]) => ws);
+  flat.forEach((o, i) => o.c = i < flat.length - 1 ? flat[i + 1].t - o.t : 0);
+  seq.forEach(([el, ws]) => el.innerHTML = ws.map(o =>
+    `<span class="w${o.c ? '' : ' z'}" style="--t:${o.t.toFixed(2)}s;--c:${o.c.toFixed(2)}s">${o.w}</span>`).join(' '));
+};
+typeHero(HT[+mg]);
+
+// Catégories : [titre, icône, services]. Service : "nom|durée ou quantité|tarif|description"
+const C = [
+['Publication d’offres d’emploi', 'job', [
+'Publication simple|1 offre|5 000 Ar|Votre offre publiée telle que vous l’avez rédigée.',
+'Publication avec rédaction améliorée|1 offre|7 000 Ar|Texte retravaillé avant la publication.',
+'Publication + affiche|1 offre|9 000 Ar|Offre publiée avec une affiche dédiée.',
+'Pack Premium : publication + affiche + épinglage|Jusqu’à la date limite|15 000 Ar|Publication, affiche et épinglage jusqu’à la clôture.',
+'Publication urgente|Selon disponibilité|10 000 Ar|Mise en ligne rapide pour un besoin pressant.',
+'Republication|1 publication|3 000 Ar|Remise en ligne d’une offre déjà publiée.',
+'Prolongation de visibilité|Période à convenir|3 000 Ar|Votre offre reste visible plus longtemps.',
+'Diffusion multi-groupes emploi|1 campagne|3 000 Ar|Partage de votre offre dans plusieurs groupes emploi.']],
+['Accompagnement des candidats', 'user', [
+'Réception CV + recherche d’offres|30 jours|2 000 Ar|Nous recevons votre CV et recherchons des offres.',
+'Transmission dossier + suivi|30 jours|20 000 Ar|Envoi de votre dossier aux recruteurs et suivi.',
+'Création de CV professionnel|1 CV|5 000 Ar|Un CV clair et professionnel, prêt à envoyer.|cv',
+'Création de lettre de motivation (LM)|1 lettre|3 000 Ar|Une lettre de motivation adaptée au poste visé.|mail',
+'Création de CV + LM|1 CV + 1 LM|8 000 Ar|Votre CV et votre lettre de motivation, assortis.|cvlm']],
+['Création d’affiches', 'img', [
+'Affiche simple|1 affiche|4 000 Ar|Une affiche claire pour votre annonce.',
+'Affiche professionnelle / personnalisée|1 affiche|7 000 Ar|Un design soigné, adapté à votre image.',
+'Modification d’affiche existante|1 modification|2 000 Ar|Mise à jour d’une affiche que vous avez déjà.',
+'Ajout de logo et coordonnées|1 affiche|1 500 Ar|Votre logo et vos contacts ajoutés à l’affiche.',
+'Pack multi-affiches|Dès 3 affiches|Dès 12 000 Ar|Plusieurs affiches à tarif réduit.']],
+['Rédaction et mise en forme', 'pen', [
+'Correction d’annonce|1 annonce|2 000 Ar|Orthographe et formulation corrigées.',
+'Rédaction professionnelle|1 annonce|4 000 Ar|Une annonce rédigée avec soin.',
+'Rédaction complète (missions, profil, conditions)|1 annonce|5 000 Ar|Missions, profil recherché et conditions détaillés.',
+'Mise en page professionnelle|1 annonce|3 000 Ar|Une annonce structurée et facile à lire.',
+'Fiche de poste complète|1 fiche|7 000 Ar|Un document détaillé du poste à pourvoir.']],
+['Packs de recrutement', 'box', [
+'Pack Basic : publication simple|1 offre|5 000 Ar|L’essentiel pour publier votre offre.',
+'Pack Standard : publication + affiche|1 offre|9 000 Ar|Publication accompagnée d’une affiche.',
+'Pack Premium : publication + affiche + épinglage|Jusqu’à la date limite|15 000 Ar|Publication, affiche et épinglage jusqu’à la clôture.',
+'Pack Recrutement Urgent : priorité + affiche|1 offre|15 000 Ar|Publication prioritaire avec affiche.',
+'Pack Multi-postes|3 offres|20 000 Ar|Pour recruter sur plusieurs postes à la fois.',
+'Pack Entreprise|5 offres|30 000 Ar|Pour les recrutements réguliers de votre entreprise.',
+'Pack Recrutement Complet|1 offre|18 000 Ar|La formule complète pour une offre.']],
+['Abonnements mensuels', 'cal', [
+'Pack Basic : 5 publications|1 mois|25 000 Ar|5 publications sur le mois.',
+'Pack Standard : 8 publications + 4 affiches + 2 épinglages|1 mois|45 000 Ar|8 publications, 4 affiches et 2 épinglages.',
+'Pack Premium : 10 publications + 10 affiches + épinglage convenu|1 mois|70 000 Ar|10 publications, 10 affiches et un épinglage convenu.']],
+['Communication digitale et publicité', 'ad', [
+'Visuel publicitaire / promotionnel|1 visuel|7 000 Ar|Un visuel pour promouvoir votre activité.',
+'Flyer numérique|1 flyer|7 000 Ar|Un flyer prêt à partager en ligne.',
+'Bannière Facebook|1 bannière|7 000 Ar|Une bannière adaptée à votre page.',
+'Logo simple|1 logo|12 000 Ar|Un logo épuré pour votre activité.',
+'Rédaction publicitaire|1 texte|3 000 Ar|Un texte accrocheur pour vos promotions.',
+'Publication publicitaire|1 publication|5 000 Ar|Votre publicité publiée en ligne.',
+'Story Facebook|1 story|3 000 Ar|Une story visuelle pour votre audience.',
+'Pack de 5 visuels|5 visuels|25 000 Ar|Cinq visuels à tarif avantageux.',
+'Pack de 10 visuels|10 visuels|45 000 Ar|Dix visuels à tarif avantageux.']],
+['Gestion de page Facebook', 'fb', [
+'Gestion Basic : 5 publications|1 mois|25 000 Ar|Animation de votre page avec 5 publications.',
+'Gestion Standard : 10 publications|1 mois|45 000 Ar|Animation de votre page avec 10 publications.',
+'Gestion Avancée : 15 publications|1 mois|65 000 Ar|Animation de votre page avec 15 publications.',
+'Gestion avec création de visuels|1 mois|Dès 70 000 Ar|Gestion de la page avec création des visuels.',
+'Gestion complète|1 mois|Dès 100 000 Ar|Prise en charge complète de votre page.']]
+];
+
+// Traductions malgaches des catégories et des services (« nom|durée|description », même ordre que C)
+const CATM = ['Famoahana tolotra asa', 'Fanaraha-maso ny mpangataka asa', 'Famoronana afisy', 'Fanoratana sy fanamboarana endrika', 'Fonosana fandraisana mpiasa', 'Famandrihana isam-bolana', 'Serasera nomerika sy dokambarotra', 'Fitantanana pejy Facebook'];
+const SM = [
+['Famoahana tsotra|1 tolotra|Ny tolotrao navoaka araka ny nosoratanao.',
+ 'Famoahana miaraka amin’ny fanoratana nohatsaraina|1 tolotra|Lahatsoratra nohavaozina alohan’ny famoahana.',
+ 'Famoahana + afisy|1 tolotra|Tolotra navoaka miaraka amin’ny afisy natokana.',
+ 'Fonosana Premium: famoahana + afisy + fametrahana eo an-tampony|Hatramin’ny daty farany|Famoahana, afisy ary fametrahana eo an-tampony hatramin’ny farany.',
+ 'Famoahana maika|Arakaraka ny fisian’ny toerana|Alefa haingana ho an’ny filàna maika.',
+ 'Famoahana indray|1 famoahana|Averina alefa ny tolotra efa navoaka.',
+ 'Fanitarana ny fahitana|Fotoana horesahina|Mitohy ho hita ela kokoa ny tolotrao.',
+ 'Fizarana amin’ny vondrona asa maro|1 fampielezan-kevitra|Zarainay amin’ny vondrona asa maro ny tolotrao.'],
+['Fandraisana CV + fitadiavana tolotra|30 andro|Raisinay ny CV-nao ary mitady tolotra mety aminao izahay.',
+ 'Fandefasana dosie + fanaraha-maso|30 andro|Alefanay amin’ny mpandray mpiasa ny dosienao ary arahinay.',
+ 'Famoronana CV matihanina|1 CV|CV mazava sy matihanina, vonona halefa.',
+ 'Famoronana taratasy fangatahana (LM)|1 taratasy|Taratasy fangatahana mifanaraka amin’ny asa tianao.',
+ 'Famoronana CV + LM|1 CV + 1 LM|Ny CV sy ny taratasy fangatahana, mifanaraka endrika.'],
+['Afisy tsotra|1 afisy|Afisy mazava ho an’ny filazanao.',
+ 'Afisy matihanina / manokana|1 afisy|Endrika voaravaka, mifanaraka amin’ny sarin’ny orinasanao.',
+ 'Fanovana afisy efa misy|1 fanovana|Fanavaozana afisy efa ananao.',
+ 'Fampidirana logo sy fifandraisana|1 afisy|Ampidirinay ao amin’ny afisy ny logo sy ny fifandraisanao.',
+ 'Fonosana afisy maromaro|Manomboka amin’ny afisy 3|Afisy maromaro amin’ny vidiny nahena.'],
+['Fanitsiana filazana|1 filazana|Ny tsipelina sy ny fanoratana nohitsiana.',
+ 'Fanoratana matihanina|1 filazana|Filazana nosoratana tamim-pitandremana.',
+ 'Fanoratana feno (asa, mombamomba, fepetra)|1 filazana|Asa, mombamomba ilaina ary fepetra amin’ny toerana.',
+ 'Fandrafetana matihanina|1 filazana|Filazana voalamina sy mora vakiana.',
+ 'Takelaka feno momba ny toerana|1 takelaka|Taratasy antsipirihany momba ny toerana hovonoina.'],
+['Fonosana Basic: famoahana tsotra|1 tolotra|Ny tena ilaina hamoahana ny tolotrao.',
+ 'Fonosana Standard: famoahana + afisy|1 tolotra|Famoahana miaraka amin’ny afisy.',
+ 'Fonosana Premium: famoahana + afisy + fametrahana eo an-tampony|Hatramin’ny daty farany|Famoahana, afisy ary fametrahana eo an-tampony hatramin’ny farany.',
+ 'Fonosana Maika: laharam-pahamehana + afisy|1 tolotra|Famoahana laharam-pahamehana miaraka amin’ny afisy.',
+ 'Fonosana Toerana maro|Tolotra 3|Ho an’ny fandraisana mpiasa amin’ny toerana maromaro miaraka.',
+ 'Fonosana Orinasa|Tolotra 5|Ho an’ny fandraisana mpiasa tsy tapaka ao amin’ny orinasanao.',
+ 'Fonosana Fandraisana mpiasa feno|1 tolotra|Ny fomba feno ho an’ny tolotra iray.'],
+['Fonosana Basic: famoahana 5|1 volana|Famoahana 5 mandritra ny volana.',
+ 'Fonosana Standard: famoahana 8 + afisy 4 + fametrahana 2 eo an-tampony|1 volana|Famoahana 8, afisy 4 ary fametrahana 2 eo an-tampony.',
+ 'Fonosana Premium: famoahana 10 + afisy 10 + fametrahana eo an-tampony nifanarahana|1 volana|Famoahana 10, afisy 10 ary fametrahana iray eo an-tampony nifanarahana.'],
+['Sary dokambarotra / fampiroboroboana|1 sary|Sary hampiroboroboana ny asanao.',
+ 'Flyer nomerika|1 flyer|Flyer vonona hozaraina an-tserasera.',
+ 'Banner Facebook|1 banner|Banner mifanaraka amin’ny pejinao.',
+ 'Logo tsotra|1 logo|Logo madio ho an’ny asanao.',
+ 'Fanoratana dokambarotra|1 lahatsoratra|Lahatsoratra mahaliana ho an’ny fampiroboroboana.',
+ 'Famoahana dokambarotra|1 famoahana|Ny dokambarotrao navoaka an-tserasera.',
+ 'Story Facebook|1 story|Story an-tsary ho an’ny mpanaraka anao.',
+ 'Fonosana sary 5|Sary 5|Sary dimy amin’ny vidiny tsara.',
+ 'Fonosana sary 10|Sary 10|Sary folo amin’ny vidiny tsara.'],
+['Fitantanana Basic: famoahana 5|1 volana|Fampiasana ny pejinao amin’ny famoahana 5.',
+ 'Fitantanana Standard: famoahana 10|1 volana|Fampiasana ny pejinao amin’ny famoahana 10.',
+ 'Fitantanana Avancée: famoahana 15|1 volana|Fampiasana ny pejinao amin’ny famoahana 15.',
+ 'Fitantanana miaraka amin’ny famoronana sary|1 volana|Fitantanana ny pejy miaraka amin’ny famoronana sary.',
+ 'Fitantanana feno|1 volana|Fitantanana feno ny pejinao.']
+];
+const OM = ['Hampahafantatra ny tolotrao ny mpangataka asa amin’ny alalan’ny famoahana mazava, madio ary hita tsara eo amin’ny pejy.',
+ 'Hanampy ny mpangataka asa hampiseho ny dosiny amim-pomba mazava sy hahita tolotra mifanaraka aminy.',
+ 'Hanome sary mazava, mora vakiana ary mora zarana an-tserasera ny filazanao.',
+ 'Hampita mazava ny hafatry ny filazanao: lahatsoratra marina, feno ary mahafinaritra vakiana.',
+ 'Hanangona serivisy fandraisana mpiasa maromaro ao anaty fonosana iray, fantatra mialoha ny ao anatiny.',
+ 'Hitazona hita mandritra ny iray volana ny fandraisana mpiasanao, miaraka amin’ny famoahana voalamina mialoha aminao.',
+ 'Hampiroboroboana ny asanao amin’ny sary sy lahatsoratra voaisy, mifanaraka amin’ny sarinao.',
+ 'Hitazona ho velona sy matihanina ny pejy Facebook-nao mandritra ny iray volana, tsy mila mitantana azy ianao.'];
+const VM = ['Alefanay an-tserasera ho anao ny tolotrao: mahazo fotoana ianao.',
+ 'Dosie mazava sy matihanina kokoa, azo alefa tsy misy ahiahy.',
+ 'Filazana miavaka eo amin’ny pejy.',
+ 'Filazana tsy misy diso, manampy hampihena ny fangatahana tsy mifandray.',
+ 'Votoaty voafaritra mialoha: fantatrao ny baikonao.',
+ 'Fandehan’ny famoahana tsy tapaka, tsy mila mamerina ny zava-drehetra ianao.',
+ 'Sary mifanaraka, vonona hamoahana.',
+ 'Pejy velona tsy tapaka, tsy mandany fotoana ianao.'];
+const NM = ['Ny lahatsoratry ny tolotrao (toerana, asa, mombamomba, daty farany, fifandraisana) ary, raha azo atao, ny logo-nao.',
+ 'Ny CV-nao na ny fampahalalana (lalana, diplaoma, traikefa) ary ny karazana asa tadiavina.',
+ 'Ny lahatsoratra hoseho, ny logo, ny loko ary, raha misy, ny afisy hovana.',
+ 'Ny dikan-teny voalohany na ny tena zava-dehibe momba ny toerana: lohateny, asa, mombamomba, fepetra.',
+ 'Ny antsipiriany momba ny tolotrao (toerana, asa, mombamomba, daty farany) sy ny logo-nao.',
+ 'Ny anaran’ny pejinao na orinasanao, ny fandehan’ny famoahana irinao ary ny votoatinao.',
+ 'Ny hafatrao, ny fifandraisanao, ny logo, ny loko ary ohatra tianao.',
+ 'Ny rohy mankany amin’ny pejinao, ny tanjonao ary ny zavatra hasongadina.'];
+const DM = [
+['Alefanay eo amin’ny pejy ny tolotra asanao, araka ny nosoratanao tamin’ny voalohany. Hojerenay fotsiny raha ao ny zava-dehibe: toerana, fifandraisana, daty farany.',
+ 'Alainay ny lahatsoratrao: ahitsy ny diso, hamarinina ny fanoratana, alamina mba ho mora vakiana. Ianao no manamarina ny dikan-teny farany, dia alefanay.',
+ 'Alefanay ny tolotrao miaraka amin’ny afisy natao ho azy, mba ho hita tsara kokoa eo amin’ny pejy. Ianao no manamarina ny afisy alohan’ny hamoahana azy.',
+ 'Famoahana ny tolotra, famoronana afisy, dia apetrakay eo an-tampon’ny pejy hatramin’ny daty farany hanaterana ny fangatahana. Arakaraka ny fisian’ny toerana ny fametrahana eo an-tampony.',
+ 'Atao laharam-pahamehana ny tolotrao: alefanay an-tserasera haingana, arakaraka ny fisian’ny toerana, ho an’ny filàna maika amin’ny fandraisana mpiasa.',
+ 'Averinay alefa ny tolotra efa navoaka, toy ny taloha na nohavaozina, mba hamelana indray ny fangatahana.',
+ 'Ampitomboinay ny fotoana hahitana ny tolotrao mandritra ny fe-potoana nifanarahana, mba hanana fotoana bebe kokoa ny mpangataka hangataka.',
+ 'Zarainay amin’ny vondrona asa maromaro ny tolotrao, amin’ny fampielezan-kevitra tokana, mba hahatratra mpangataka bebe kokoa.'],
+['Alefaso aminay ny CV-nao. Mandritra ny 30 andro, mitady tolotra mifanaraka amin’ny mombamombanao izahay ary mampita azy aminao. Tsy misy fitsarana na fandraisana ho mpiasa voatokana.',
+ 'Alefanay amin’ny mpandray mpiasa mikasika ny dosienao ary arahinay mandritra ny 30 andro. Tsy ampanantenainay ny antso avy amin’ny orinasa, ny fitsarana, na ny fandraisana ho mpiasa.',
+ 'Soratanay sy alamintsika ny CV-nao avy amin’ny fampahalalana nomenao: lalana, fahaizana, fiofanana. Mahazo rakitra vonona halefa ianao.',
+ 'Soratanay ny taratasy fangatahana mifanaraka amin’ny asa tianao sy ny mombamombanao, vonona hampiarahina amin’ny fangatahanao.',
+ 'Amboarinay ny CV-nao sy ny taratasy fangatahanao amin’ny endrika mifanaraka, ho fangatahana mirindra sy madio.'],
+['Amboarinay ny afisy mazava ho an’ny filazanao: lohateny, fampahalalana lehibe ary fifandraisana, amin’ny endrika vonona hozaraina an-tserasera.',
+ 'Alamintsika ny afisy manokana, miaraka amin’ny fandrafetana sy loko mifanaraka amin’ny sarin’ny orinasanao.',
+ 'Alefaso aminay ny afisy ananao ankehitriny. Ovainay ny lahatsoratra, ny daty na ny zavatra angatahanao, dia omenay anao ny dikan-teny vaovao.',
+ 'Ampidirinay ny logo sy ny fifandraisanao (telefaona, adiresy, pejy) ao amin’ny afisy, tsy manao indray ny sarin’ny sisa.',
+ 'Manomboka amin’ny afisy 3, mamorona andiany mifanaraka endrika izahay amin’ny vidiny nahena. Hamafisina araka ny isan’ny afisy ny vidiny farany.'],
+['Vakiananay ny filazanao ary ahitsinay ny tsipelina, ny fitsipi-pitenenana ary ny fiteny tsy mahay, tsy manova ny dikany.',
+ 'Avy amin’ny fampahalalana nomenao, soratanay ny filazana mazava sy matihanina, vonona hamoahana.',
+ 'Soratanay ny filazana feno: asa, mombamomba ilaina ary fepetra amin’ny toerana, mba hampihena ny fangatahana tsy mifandray.',
+ 'Alamintsika ny filazanao amin’ny lohateny, fehintsoratra ary lisitra, mba ho mora vakiana amin’ny findainao.',
+ 'Manomana takelaka antsipirihany momba ny toerana izahay: anarana, asa, fahaizana, fepetra ary fomba hangatahana.'],
+['Famoahana tsotra ny tolotrao araka ny nosoratanao. Ny tena ilaina hamoahana tolotra an-tserasera.',
+ 'Alefanay ny tolotrao ary amboarinay ny afisy natokana, izay hamarinina alohan’ny famoahana.',
+ 'Famoahana, afisy ary fametrahana ny tolotra eo an-tampony hatramin’ny daty farany hanaterana ny fangatahana. Arakaraka ny fisian’ny toerana ny fametrahana eo an-tampony.',
+ 'Alefa laharam-pahamehana ny tolotrao, miaraka amin’ny afisy, mba hanombohana fandraisana mpiasa tsy mila miandry.',
+ 'Alefanay ny tolotra telo ho an’ny toerana samihafa, mba hahazoana mpiasa isan-karazany amin’ny baiko tokana.',
+ 'Alefanay ny tolotra dimy, ho an’ireo orinasa mandray mpiasa tsy tapaka.',
+ 'Fomba feno ho an’ny tolotra iray, izay manangona ny maro amin’ny serivisy fandraisana mpiasanay. Hamafisinay aminao amin’ny WhatsApp ny antsipiriany alohan’ny hanombohana.'],
+['Mandritra ny iray volana, alefanay ny tolotra na filazana dimy aminao, amin’ny daty nifanarahana aminao.',
+ 'Mandritra ny volana: famoahana 8, afisy 4 ary fametrahana 2 eo an-tampony, voalamina miaraka aminao araka ny fandraisanao mpiasa. Arakaraka ny fisian’ny toerana ny fametrahana eo an-tampony.',
+ 'Mandritra ny volana: famoahana 10, afisy 10 ary fametrahana iray eo an-tampony izay nifanarahana ny faharetany, ho an’ny fandraisana mpiasa mavitrika be.'],
+['Amboarinay ny sary hampiroboroboana ny asanao, ny vokatrao na ny tolotrao, amin’ny lokanao sy ny logo-nao.',
+ 'Amboarinay ny flyer nomerika, vonona hozaraina amin’ny Facebook, WhatsApp na amin’ny hafatra.',
+ 'Alavinay ny banner mifanaraka amin’ny haben’ny sarin’ny pejinao, miaraka amin’ny anaranao, ny logo-nao ary ny hafatrao.',
+ 'Amboarinay ny logo madio avy amin’ny anaran’ny asanao sy ny lokanao tiana, atolotra vonona hampiasaina.',
+ 'Soratanay ny lahatsoratra mahaliana ho an’ny fampiroboroboana: hafatra mazava, feo mifanaraka amin’ny mpanaraka anao, antso hanao zavatra.',
+ 'Alefanay an-tserasera ny dokambarotrao amin’ny daty nifanarahana aminao. Tsy ao anatin’izany ny teti-bola Facebook Ads.',
+ 'Amboarinay ny story mitsangana mba hasongadina ny fampiroboroboana na ny vaovao eo amin’ny mpanaraka anao.',
+ 'Sary dimy namboarina amin’ny endrika mifanaraka, amin’ny vidiny tsara noho ny tsirairay.',
+ 'Sary folo mifanaraka endrika, hamelomana ny famoahanao mandritra ny fotoana lava, amin’ny vidiny tsara noho ny tsirairay.'],
+['Mandritra ny iray volana, mampiasa ny pejy Facebook-nao izahay amin’ny famoahana 5 voalamina miaraka aminao.',
+ 'Mandritra ny iray volana, mampiasa ny pejy Facebook-nao izahay amin’ny famoahana 10 voalamina miaraka aminao.',
+ 'Mandritra ny iray volana, mampiasa ny pejy Facebook-nao izahay amin’ny famoahana 15 voalamina miaraka aminao.',
+ 'Mitantana ny pejinao mandritra ny iray volana izahay ary mamorona ny sary ho an’ny famoahanao. Vidiny fototra, ovaina araka ny isan’ny sary.',
+ 'Raisinay an-tanana ny pejinao mandritra ny iray volana: famoahana, sary ary fampiasana. Miankina amin’ny filanao ny vidiny farany ary hamafisina amin’ny WhatsApp. Tsy ao anatin’izany ny teti-bola Facebook Ads.']
+];
+const IM = [
+['Famoahana ny tolotrao araka ny nosoratanao;Fanamarinana fa ao ny zava-dehibe: toerana, fifandraisana, daty farany',
+ 'Fanitsiana ny diso sy fanamafisana ny fanoratana;Firafitra mora vakiana;Fanamarinanao ny dikan-teny farany;Famoahana ny tolotra',
+ 'Famoronana afisy natao ho an’ny tolotrao;Fanamarinanao ny afisy alohan’ny famoahana;Famoahana ny tolotra miaraka amin’ny afisy',
+ 'Famoahana ny tolotra;Famoronana ny afisy;Fametrahana eo an-tampon’ny pejy hatramin’ny daty farany, arakaraka ny fisian’ny toerana',
+ 'Famoahana haingana sy laharam-pahamehana, arakaraka ny fisian’ny toerana;Ho an’ny filàna maika amin’ny fandraisana mpiasa',
+ 'Famoahana indray ny tolotra efa navoaka;Lahatsoratra naverina toy ny taloha na nohavaozina',
+ 'Fitazonana hita ny tolotrao mandritra ny fe-potoana nifanarahana;Fotoana bebe kokoa ho an’ny mpangataka',
+ 'Fizarana ny tolotrao amin’ny vondrona asa maromaro;Fampielezan-kevitra tokana'],
+['Fandraisana ny CV-nao;Fitadiavana tolotra mifanaraka amin’ny mombamombanao mandritra ny 30 andro;Fampitana ireo tolotra hita',
+ 'Fandefasana ny dosienao amin’ny mpandray mpiasa mikasika;Fanaraha-maso mandritra ny 30 andro;Tsy misy antso, fitsarana na fandraisana ho mpiasa voatokana',
+ 'Fanoratana sy fandrafetana ny CV-nao avy amin’ny fampahalalana nomenao;Lalana, fahaizana ary fiofanana;Rakitra vonona halefa',
+ 'Taratasy nosoratana ho an’ny asa tiana sy ny mombamombanao;Vonona hampiarahina amin’ny fangatahanao',
+ 'CV sy taratasy fangatahana amin’ny endrika mifanaraka;Fangatahana mirindra sy madio'],
+['Lohateny, fampahalalana lehibe ary fifandraisana;Endrika vonona hozaraina an-tserasera',
+ 'Fandrafetana manokana;Loko mifanaraka amin’ny sarin’ny orinasanao',
+ 'Fanovana ny lahatsoratra, daty na zavatra angatahana;Fanomezana ny dikan-teny vaovao',
+ 'Fampidirana ny logo-nao;Fampidirana ny fifandraisanao: telefaona, adiresy, pejy;Ny sisan’ny sary tsy niova',
+ 'Andiany afisy mifanaraka endrika;Vidiny nahena manomboka amin’ny afisy 3;Vidiny farany hamafisina araka ny isan’ny afisy'],
+['Fanitsiana ny tsipelina sy ny fitsipi-pitenenana;Fiteny tsy mahay nohatsaraina;Ny dikan’ny filazana notazonina',
+ 'Filazana nosoratana avy amin’ny fampahalalana nomenao;Lahatsoratra mazava sy matihanina, vonona hamoahana',
+ 'Asa;Mombamomba ilaina;Fepetra amin’ny toerana',
+ 'Lohateny, fehintsoratra ary lisitra;Mora vakiana amin’ny finday',
+ 'Anaran’ny toerana, asa ary fahaizana;Fepetra sy fomba hangatahana'],
+['Famoahana ny tolotrao, araka ny nosoratanao',
+ 'Famoahana ny tolotra;Afisy natokana, hamarinina alohan’ny famoahana',
+ 'Famoahana;Afisy;Fametrahana hatramin’ny daty farany, arakaraka ny fisian’ny toerana',
+ 'Famoahana laharam-pahamehana ny tolotra;Afisy hanasongadinana azy',
+ 'Famoahana tolotra 3 ho an’ny toerana samihafa;Mpiasa isan-karazany raisina amin’ny baiko iray',
+ 'Famoahana tolotra 5;Natao ho an’ny fandraisana mpiasa tsy tapaka',
+ 'Fomba feno ho an’ny tolotra iray;Manangona ny maro amin’ny serivisy fandraisana mpiasanay;Antsipiriany hamafisina amin’ny WhatsApp alohan’ny hanombohana'],
+['Famoahana tolotra na filazana 5 mandritra ny volana;Daty nifanarahana aminao',
+ 'Famoahana 8;Afisy 4;Fametrahana 2 eo an-tampony, arakaraka ny fisian’ny toerana;Fandaharana araka ny fandraisanao mpiasa',
+ 'Famoahana 10;Afisy 10;Fametrahana 1 eo an-tampony, faharetana nifanarahana'],
+['Sary fampiroboroboana ho an’ny asanao, vokatrao na tolotrao;Ny lokanao sy ny logo-nao',
+ 'Flyer nomerika;Vonona hozaraina amin’ny Facebook, WhatsApp na amin’ny hafatra',
+ 'Banner mifanaraka amin’ny haben’ny sarin’ny pejinao;Ny anaranao, ny logo-nao ary ny hafatrao',
+ 'Logo madio avy amin’ny anaran’ny asanao;Ny lokanao tiana;Atolotra vonona hampiasaina',
+ 'Hafatra mazava sy mahaliana;Feo mifanaraka amin’ny mpanaraka anao;Antso hanao zavatra',
+ 'Famoahana ny dokambarotrao an-tserasera;Daty nifanarahana aminao;Tsy ao anatin’izany ny teti-bola Facebook Ads',
+ 'Story mitsangana;Ho an’ny fampiroboroboana na vaovao',
+ 'Sary dimy amin’ny endrika mifanaraka;Vidiny tsara noho ny tsirairay',
+ 'Sary folo amin’ny endrika mifanaraka;Hamelomana ny famoahanao mandritra ny fotoana lava;Vidiny tsara noho ny tsirairay'],
+['Famoahana 5 mandritra ny volana;Voalamina miaraka aminao',
+ 'Famoahana 10 mandritra ny volana;Voalamina miaraka aminao',
+ 'Famoahana 15 mandritra ny volana;Voalamina miaraka aminao',
+ 'Fitantanana ny pejy mandritra ny iray volana;Famoronana ny sary ho an’ny famoahanao;Vidiny fototra, ovaina araka ny isan’ny sary',
+ 'Fitantanana feno ny pejy mandritra ny iray volana;Famoahana, sary ary fampiasana;Vidiny farany hamafisina amin’ny WhatsApp;Tsy ao anatin’izany ny teti-bola Facebook Ads']
+];
+// Services complémentaires (17) : c = catégorie ; f = nom|durée|tarif|description[|icône] ; m = nom|durée|description (malgache)
+const X = [
+{c:0,f:'Rappel hebdomadaire de l’offre|1 mois|10 000 Ar|Votre offre remise en avant chaque semaine.',
+ m:'Fampahatsiarovana isan-kerinandro ny tolotra|1 volana|Averina asongadina isan-kerinandro ny tolotrao.',
+ df:'Pendant un mois, nous remettons votre offre en ligne chaque semaine, soit 4 republications, pour qu’elle reste visible des candidats.',
+ dm:'Mandritra ny iray volana, averinay alefa isan-kerinandro ny tolotrao, dia famoahana indray 4, mba ho hita foana ny tolotra.',
+ if:'4 republications sur un mois;Une par semaine;Texte repris tel quel ou mis à jour',
+ im:'Famoahana indray 4 mandritra ny volana;Iray isan-kerinandro;Lahatsoratra naverina toy ny taloha na nohavaozina'},
+{c:1,f:'Relecture et correction de CV|1 CV|2 500 Ar|Votre CV relu, fautes et tournures corrigées.|cv',
+ m:'Famakiana sy fanitsiana CV|1 CV|Vakiana ny CV-nao, ahitsy ny diso sy ny fiteny.',
+ df:'Vous nous envoyez votre CV existant. Nous corrigeons l’orthographe, la grammaire et les tournures maladroites, sans changer votre parcours ni la mise en page.',
+ dm:'Alefaso aminay ny CV efa ananao. Ahitsinay ny tsipelina, ny fitsipi-pitenenana ary ny fiteny tsy mahay, tsy manova ny lalanao na ny fandrafetana.',
+ if:'Correction de l’orthographe et de la grammaire;Tournures améliorées;Contenu et mise en page conservés',
+ im:'Fanitsiana ny tsipelina sy ny fitsipi-pitenenana;Fiteny nohatsaraina;Ny votoaty sy ny fandrafetana notazonina'},
+{c:1,f:'Refonte de CV (contenu et mise en page)|1 CV|4 000 Ar|Un CV existant remodelé, plus clair et plus moderne.|cv',
+ m:'Famolavolana indray ny CV (votoaty sy endrika)|1 CV|CV efa misy novaina, mazava sy maoderina kokoa.',
+ df:'Nous reprenons votre CV existant : contenu reformulé, informations mieux ordonnées et nouvelle mise en page. Vous recevez un fichier prêt à envoyer.',
+ dm:'Alainay ny CV efa ananao: soratana indray ny votoaty, alamina tsara kokoa ny fampahalalana ary vaovao ny endrika. Mahazo rakitra vonona halefa ianao.',
+ if:'Contenu reformulé;Informations mieux ordonnées;Nouvelle mise en page;Fichier prêt à envoyer',
+ im:'Votoaty nosoratana indray;Fampahalalana nalamina tsara kokoa;Endrika vaovao;Rakitra vonona halefa'},
+{c:1,f:'CV en anglais ou bilingue|1 CV|8 000 Ar|Un CV traduit en anglais ou en version bilingue.|cv',
+ m:'CV amin’ny teny anglisy na roa samy hafa|1 CV|CV nadika amin’ny teny anglisy na dikan-teny roa samy hafa.',
+ df:'Nous traduisons et adaptons votre CV en anglais, ou nous créons une version bilingue français-anglais, pour postuler auprès d’entreprises internationales.',
+ dm:'Adikay sy ampifanarahinay amin’ny teny anglisy ny CV-nao, na mamorona dikan-teny frantsay-anglisy izahay, hangatahana amin’ny orinasa iraisam-pirenena.',
+ if:'Traduction du CV en anglais;Version bilingue possible;Mise en page soignée;Fichier prêt à envoyer',
+ im:'Fandikana ny CV amin’ny teny anglisy;Dikan-teny roa samy hafa azo atao;Fandrafetana madio;Rakitra vonona halefa'},
+{c:1,f:'Préparation à l’entretien|1 séance|5 000 Ar|Guide de questions et conseils, par WhatsApp.',
+ m:'Fiomanana amin’ny fitsarana|1 fotoam-pivoriana|Torolalana misy fanontaniana sy toro-hevitra, amin’ny WhatsApp.',
+ df:'Nous vous envoyons par WhatsApp un guide adapté au poste visé : questions fréquentes, pistes de réponses et conseils pratiques. Aucune embauche n’est garantie.',
+ dm:'Alefanay amin’ny WhatsApp aminao ny torolalana mifanaraka amin’ny asa tianao: fanontaniana mahazatra, hevitra hamaliana ary toro-hevitra azo ampiharina. Tsy misy fandraisana ho mpiasa voatokana.',
+ if:'Questions fréquentes selon le poste;Pistes de réponses;Conseils pratiques;Échange par WhatsApp;Aucune embauche garantie',
+ im:'Fanontaniana mahazatra araka ny asa;Hevitra hamaliana;Toro-hevitra azo ampiharina;Fifanakalozan-kevitra amin’ny WhatsApp;Tsy misy fandraisana ho mpiasa voatokana'},
+{c:1,f:'Pack Candidat : CV + lettre + transmission du dossier|30 jours|24 000 Ar|CV, lettre et envoi de votre dossier, à tarif réduit.',
+ m:'Fonosana Mpangataka: CV + taratasy + fandefasana dosie|30 andro|CV, taratasy ary fandefasana ny dosie, amin’ny vidiny nahena.',
+ df:'Une formule complète : nous créons votre CV et votre lettre de motivation, puis nous transmettons votre dossier aux recruteurs concernés avec un suivi de 30 jours. Aucun entretien ni embauche n’est garanti.',
+ dm:'Fomba feno: amboarinay ny CV-nao sy ny taratasy fangatahanao, dia alefanay amin’ny mpandray mpiasa mikasika ny dosienao miaraka amin’ny fanaraha-maso mandritra ny 30 andro. Tsy misy fitsarana na fandraisana ho mpiasa voatokana.',
+ if:'Création de votre CV;Création de votre lettre de motivation;Envoi du dossier aux recruteurs concernés;Suivi pendant 30 jours;Aucun entretien ni embauche garanti',
+ im:'Famoronana ny CV-nao;Famoronana ny taratasy fangatahanao;Fandefasana ny dosie amin’ny mpandray mpiasa mikasika;Fanaraha-maso mandritra ny 30 andro;Tsy misy fitsarana na fandraisana ho mpiasa voatokana'},
+{c:3,f:'Traduction d’annonce français ↔ malgache|1 annonce|3 000 Ar|Votre annonce traduite dans l’autre langue.',
+ m:'Fandikana filazana frantsay ↔ malagasy|1 filazana|Nadika amin’ny fiteny hafa ny filazanao.',
+ df:'Nous traduisons votre annonce du français au malgache, ou du malgache au français, en gardant un ton clair et professionnel.',
+ dm:'Adikay avy amin’ny teny frantsay ho amin’ny malagasy, na ny mifanohitra amin’izany, ny filazanao, amin’ny feo mazava sy matihanina.',
+ if:'Traduction français ↔ malgache;Ton clair et professionnel;Sens de l’annonce conservé',
+ im:'Fandikana frantsay ↔ malagasy;Feo mazava sy matihanina;Ny dikan’ny filazana notazonina'},
+{c:3,f:'Annonce de stage ou d’alternance|1 offre|6 000 Ar|Rédaction et publication d’une offre de stage.',
+ m:'Filazana fampiofanana na fiofanana miasa|1 tolotra|Fanoratana sy famoahana tolotra fampiofanana.',
+ df:'Nous rédigeons une offre de stage ou d’alternance claire, destinée aux étudiants et jeunes diplômés, puis nous la publions sur la page.',
+ dm:'Soratanay ny tolotra fampiofanana na fiofanana miasa mazava, natao ho an’ny mpianatra sy ny vao nahazo diplaoma, dia alefanay eo amin’ny pejy.',
+ if:'Rédaction de l’offre : missions, profil, durée;Adaptée aux étudiants et jeunes diplômés;Publication sur la page',
+ im:'Fanoratana ny tolotra: asa, mombamomba, faharetana;Mifanaraka amin’ny mpianatra sy ny vao nahazo diplaoma;Famoahana eo amin’ny pejy'},
+{c:6,f:'Catalogue de produits ou menu en visuel|Jusqu’à 10 articles|10 000 Ar|Un visuel de vos articles, prêt à partager.',
+ m:'Katalaogy vokatra na menio amin’ny sary|Hatramin’ny entana 10|Sary mampiseho ny entanao, vonona hozaraina.',
+ df:'Nous créons un catalogue ou un menu en visuel pour jusqu’à 10 articles, avec photos, noms et prix, facile à partager sur WhatsApp et Facebook.',
+ dm:'Amboarinay ny katalaogy na menio amin’ny sary hatramin’ny entana 10, misy sary, anarana ary vidiny, mora zarana amin’ny WhatsApp sy Facebook.',
+ if:'Jusqu’à 10 articles;Photos, noms et prix;Vos couleurs et votre logo;Prêt à partager sur WhatsApp et Facebook',
+ im:'Hatramin’ny entana 10;Sary, anarana ary vidiny;Ny lokanao sy ny logo-nao;Vonona hozaraina amin’ny WhatsApp sy Facebook'},
+{c:6,f:'Retouche de photo produit|1 photo|1 500 Ar|Une photo plus nette et plus attrayante.',
+ m:'Fanatsarana sarin’entana|1 sary|Sary mazava kokoa sy mahasarika kokoa.',
+ df:'Nous améliorons une photo de produit : luminosité, netteté, couleurs et recadrage, pour la rendre plus attrayante en ligne.',
+ dm:'Hatsarainay ny sarin’entana: hazavana, fahamazavana, loko ary fanapahana, mba ho mahasarika kokoa an-tserasera.',
+ if:'Luminosité et netteté;Couleurs et recadrage;Photo prête à publier',
+ im:'Hazavana sy fahamazavana;Loko sy fanapahana;Sary vonona hamoahana'},
+{c:6,f:'Vidéo courte (photos et textes)|1 vidéo|12 000 Ar|Une courte vidéo à partir de vos photos.',
+ m:'Horonan-tsary fohy (sary sy lahatsoratra)|1 horonan-tsary|Horonan-tsary fohy avy amin’ny sarinao.',
+ df:'Nous réalisons une courte vidéo à partir de vos photos et de vos textes, avec votre logo, pour vos publications Facebook et WhatsApp.',
+ dm:'Mamorona horonan-tsary fohy avy amin’ny sary sy ny lahatsoratrao izahay, miaraka amin’ny logo-nao, ho an’ny famoahana Facebook sy WhatsApp.',
+ if:'Montage à partir de vos photos et textes;Votre logo;Format adapté à Facebook et WhatsApp',
+ im:'Fanamboarana avy amin’ny sary sy lahatsoratrao;Ny logo-nao;Endrika mifanaraka amin’ny Facebook sy WhatsApp'},
+{c:6,f:'Configuration de WhatsApp Business|1 compte|10 000 Ar|Profil, catalogue et messages automatiques.',
+ m:'Fanamboarana WhatsApp Business|1 kaonty|Mombamomba, katalaogy ary hafatra automatika.',
+ df:'Nous configurons votre compte WhatsApp Business : profil professionnel, catalogue de produits, messages d’accueil et réponses automatiques.',
+ dm:'Mametraka ny kaonty WhatsApp Business-nao izahay: mombamomba matihanina, katalaogin’ny vokatra, hafatra fandraisana ary valiny automatika.',
+ if:'Profil professionnel;Catalogue de produits;Message d’accueil et réponses automatiques',
+ im:'Mombamomba matihanina;Katalaogin’ny vokatra;Hafatra fandraisana sy valiny automatika'},
+{c:7,f:'Création de page Facebook|1 page|Dès 20 000 Ar|Page configurée : photo, présentation et infos.',
+ m:'Famoronana pejy Facebook|1 pejy|Pejy voalamina: sary, fampahafantarana ary fampahalalana.',
+ df:'Nous créons et configurons votre page Facebook : nom, photo de profil, présentation, coordonnées et boutons d’action. Le tarif final est confirmé sur WhatsApp selon vos besoins.',
+ dm:'Mamorona sy mametraka ny pejy Facebook-nao izahay: anarana, sary fanehoan-tena, fampahafantarana, fifandraisana ary bokotra hetsika. Hamafisina amin’ny WhatsApp araka ny filanao ny vidiny farany.',
+ if:'Création de la page;Photo de profil et présentation;Coordonnées et boutons d’action;Tarif final confirmé sur WhatsApp',
+ im:'Famoronana ny pejy;Sary fanehoan-tena sy fampahafantarana;Fifandraisana sy bokotra hetsika;Vidiny farany hamafisina amin’ny WhatsApp'},
+{c:7,f:'Calendrier éditorial du mois|1 mois|8 000 Ar|Vos idées de publications planifiées jour par jour.',
+ m:'Kalandrie fanontana ho an’ny volana|1 volana|Hevitry ny famoahanao voalamina isan’andro.',
+ df:'Nous préparons le calendrier de vos publications du mois : idées de contenus, dates et messages à publier. Vous publiez ensuite vous-même.',
+ dm:'Manomana ny kalandrie ho an’ny famoahanao amin’ny volana izahay: hevitra momba ny votoaty, daty ary hafatra havoaka. Ianao no mamoaka avy eo.',
+ if:'Idées de contenus pour le mois;Dates de publication;Messages à publier;Vous publiez vous-même',
+ im:'Hevitry ny votoaty ho an’ny volana;Daty famoahana;Hafatra havoaka;Ianao no mamoaka'},
+{c:7,f:'Rapport mensuel de performance|1 mois|5 000 Ar|Résumé des résultats de votre page.',
+ m:'Tatitra isam-bolana momba ny valiny|1 volana|Famintinana ny valin’ny pejinao.',
+ df:'Nous analysons votre page pendant un mois et vous remettons un résumé clair : portée, interactions, publications les plus vues et conseils d’amélioration.',
+ dm:'Mandalina ny pejinao mandritra ny iray volana izahay ary manome anao famintinana mazava: fahatratrarana, fifandraisana, famoahana hita be indrindra ary toro-hevitra hanatsarana.',
+ if:'Portée et interactions;Publications les plus vues;Conseils d’amélioration',
+ im:'Fahatratrarana sy fifandraisana;Famoahana hita be indrindra;Toro-hevitra hanatsarana'},
+{c:7,f:'Pack Lancement de page : page + bannière + logo|1 projet|33 000 Ar|Création de page, bannière et logo, à tarif réduit.',
+ m:'Fonosana Fanokafana pejy: pejy + banner + logo|1 tetikasa|Famoronana pejy, banner ary logo, amin’ny vidiny nahena.',
+ df:'Une formule pour démarrer : création de la page Facebook, bannière à la taille de la couverture et logo épuré, avec des couleurs cohérentes.',
+ dm:'Fomba hanombohana: famoronana ny pejy Facebook, banner mifanaraka amin’ny haben’ny sary fanalahidy ary logo madio, amin’ny loko mifanaraka.',
+ if:'Création de la page Facebook;Bannière de couverture;Logo épuré;Couleurs cohérentes',
+ im:'Famoronana ny pejy Facebook;Banner ho an’ny sary fanalahidy;Logo madio;Loko mifanaraka'},
+{c:8,f:'Tri des candidatures selon vos critères|Jusqu’à 20 CV|10 000 Ar|Nous trions les candidatures reçues pour vous.',
+ m:'Fandaharana ny fangatahana araka ny fepetranao|Hatramin’ny CV 20|Alamintsika ho anao ny fangatahana voaray.',
+ df:'Vous nous transmettez les candidatures reçues et vos critères. Nous trions jusqu’à 20 CV et vous remettons une liste classée des profils qui correspondent. La décision finale vous appartient.',
+ dm:'Alefaso aminay ny fangatahana voaray sy ny fepetra tianao. Alamintsika hatramin’ny CV 20 ary omenay anao lisitra voalahatra ny mombamomba mifanaraka. Anao ny fanapahan-kevitra farany.',
+ if:'Tri de jusqu’à 20 CV;Selon vos critères;Liste classée des profils retenus;Décision finale pour vous',
+ im:'Fandaharana hatramin’ny CV 20;Araka ny fepetranao;Lisitra voalahatra ny mombamomba voafidy;Anao ny fanapahan-kevitra farany'},
+{c:8,f:'Grille de questions d’entretien|1 poste|6 000 Ar|Questions adaptées au poste à pourvoir.',
+ m:'Lisitry ny fanontaniana amin’ny fitsarana|1 toerana|Fanontaniana mifanaraka amin’ny toerana homena.',
+ df:'Nous préparons une grille de questions d’entretien adaptée au poste : questions sur le parcours, les compétences et la motivation, avec des critères pour comparer les candidats.',
+ dm:'Manomana lisitry ny fanontaniana amin’ny fitsarana mifanaraka amin’ny toerana izahay: fanontaniana momba ny lalana, ny fahaizana ary ny faniriana, miaraka amin’ny fepetra hampitahana ny mpangataka.',
+ if:'Questions adaptées au poste;Parcours, compétences et motivation;Critères pour comparer les candidats',
+ im:'Fanontaniana mifanaraka amin’ny toerana;Lalana, fahaizana ary faniriana;Fepetra hampitahana ny mpangataka'}
+];
+// Nouvelle catégorie 8 : textes (fr / mg)
+const CAT8 = { t: 'Aide au recrutement', tm: 'Fanampiana amin’ny fandraisana mpiasa',
+  o: 'Aider les recruteurs à gérer plus facilement les candidatures reçues et à préparer les entretiens.',
+  om: 'Hanampy ny mpandray mpiasa hitantana mora kokoa ny fangatahana voaray sy hiomana amin’ny fitsarana.',
+  v: 'Moins de temps passé à trier et à préparer : vous vous concentrez sur la décision.',
+  vm: 'Tsy mandany fotoana be amin’ny fandaharana sy fanomanana: ianao no mifantoka amin’ny fanapahan-kevitra.',
+  n: 'Les candidatures reçues (CV), vos critères de sélection et l’intitulé du poste.',
+  nm: 'Ny fangatahana voaray (CV), ny fepetra fifantenana ary ny anaran’ny toerana.' };
+C.push([CAT8.t, 'user', []]); CATM.push(CAT8.tm); SM.push([]); DM.push([]); IM.push([]); OM.push(CAT8.om); VM.push(CAT8.vm); NM.push(CAT8.nm);
+X.forEach(x => { C[x.c][2].push(x.f); SM[x.c].push(x.m); DM[x.c].push(x.dm); IM[x.c].push(x.im); });
+const L = (f, m) => mg ? m : f,
+  price = q => mg ? q.replace(/^Dès/, 'Manomboka amin’ny') : q;
+
+// Cartes de services : le bouton « Commander » ouvre la page de description du service
+let fl = -1;
+const applyFilter = () => $$('.cat').forEach(s => s.hidden = fl >= 0 && +s.dataset.c !== fl);
+const renderCats = keep => {
+  $('#cats').innerHTML = C.map(([t, k, l], c) => `<section class="cat" data-c="${c}" aria-labelledby="c${c}"><h3 id="c${c}" class="rv">${ic(k)}${L(t, CATM[c])}</h3><div class="grid">${l.map((r, j) => {
+    const [fa, fd, fp, fx, k2] = r.split('|'), [a, d, x] = mg ? SM[c][j].split('|') : [fa, fd, fx], b = L('Commander', 'Mandefa baiko');
+    return `<article class="card svc rv" style="--d:${j % 3 * 70}ms"><span class="ico">${ic(k2 || k)}</span><h4>${a}</h4><p>${x}</p><p class="du">${d}</p><p class="pr">${price(fp)}</p><a class="btn" href="#/s/${c}-${j}" aria-label="${b} : ${a}">${b}</a></article>`;
+  }).join('')}</div></section>`).join('');
+  applyFilter();
+  if (keep) $$('#cats .rv').forEach(e => e.classList.add('in'));
+};
+renderCats();
+
+// Filtre par catégorie
+const ch = $('#chips');
+const renderChips = () => {
+  ch.innerHTML = [L('Tous', 'Rehetra'), ...C.map((c, i) => L(c[0], CATM[i]))].map((t, i) => `<button type="button" class="chip" aria-pressed="${i - 1 === fl}" data-f="${i - 1}">${t}</button>`).join('');
+};
+renderChips();
+ch.onclick = e => {
+  const b = e.target.closest('.chip');
+  if (!b) return;
+  fl = +b.dataset.f;
+  $$('.chip').forEach(x => x.setAttribute('aria-pressed', x === b));
+  applyFilter();
+};
+
+// WhatsApp : le numéro n’apparaît jamais dans l’interface, le lien est construit au moment du clic
+const openWa = t => { const w = open(wa(t), '_blank'); if (w) w.opener = null; else location.href = wa(t); };
+document.addEventListener('click', e => {
+  const a = e.target.closest('[data-wa]');
+  if (!a) return;
+  e.preventDefault();
+  openWa(a.dataset.wa || L('Bonjour, je souhaite des renseignements sur vos services.', 'Salama, mila fanazavana momba ny serivisinareo aho.'));
+});
+
+// Descriptions détaillées : mêmes catégories et même ordre que C
+const D = [
+['Nous publions votre offre d’emploi sur la page, exactement comme vous l’avez rédigée. Nous vérifions seulement que l’essentiel y figure : poste, contact, date limite.',
+ 'Nous reprenons votre texte : fautes corrigées, formulation plus claire, structure lisible. Vous validez la version finale, puis nous la publions.',
+ 'Nous publions votre offre avec une affiche conçue pour elle, plus visible dans le fil d’actualité. Vous validez l’affiche avant la mise en ligne.',
+ 'Publication de l’offre, création de l’affiche, puis épinglage en haut de la page jusqu’à la date limite de candidature. Épinglage selon disponibilité.',
+ 'Votre offre passe en priorité : nous la mettons en ligne rapidement, selon disponibilité, pour un besoin de recrutement pressant.',
+ 'Nous remettons en ligne une offre déjà publiée, telle quelle ou mise à jour, pour relancer les candidatures.',
+ 'Nous prolongeons la visibilité de votre offre sur une période convenue ensemble, pour laisser plus de temps aux candidats de postuler.',
+ 'Nous partageons votre offre dans plusieurs groupes emploi, en une seule campagne, pour toucher plus de candidats.'],
+['Vous nous envoyez votre CV. Pendant 30 jours, nous recherchons des offres qui correspondent à votre profil et nous vous les transmettons. Aucun entretien ni embauche n’est garanti.',
+ 'Nous envoyons votre dossier aux recruteurs concernés et assurons le suivi pendant 30 jours. Nous ne garantissons ni appel de l’entreprise, ni entretien, ni embauche.',
+ 'Nous rédigeons et mettons en page votre CV à partir de vos informations : parcours, compétences, formations. Vous recevez un fichier prêt à envoyer.',
+ 'Nous rédigeons une lettre de motivation adaptée au poste visé et à votre profil, prête à joindre à votre candidature.',
+ 'Nous créons votre CV et votre lettre de motivation dans un style assorti, pour une candidature cohérente et soignée.'],
+['Nous créons une affiche claire pour votre annonce : titre, informations principales et contact, dans un format prêt à partager en ligne.',
+ 'Nous concevons une affiche sur mesure, avec une mise en page et des couleurs adaptées à l’image de votre entreprise.',
+ 'Vous nous envoyez votre affiche actuelle. Nous modifions les textes, dates ou éléments demandés, puis nous vous livrons la nouvelle version.',
+ 'Nous ajoutons votre logo et vos coordonnées (téléphone, adresse, page) à une affiche, sans refaire le reste du visuel.',
+ 'À partir de 3 affiches, nous créons une série au style cohérent, à tarif réduit. Le tarif final est confirmé selon le nombre d’affiches.'],
+['Nous relisons votre annonce et corrigeons l’orthographe, la grammaire et les tournures maladroites, sans changer le sens.',
+ 'À partir de vos informations, nous rédigeons une annonce claire et professionnelle, prête à publier.',
+ 'Nous rédigeons l’annonce complète : missions, profil recherché et conditions du poste, pour limiter les candidatures hors sujet.',
+ 'Nous structurons votre annonce avec des titres, des paragraphes et des listes, pour qu’elle se lise facilement sur téléphone.',
+ 'Nous préparons un document détaillé du poste : intitulé, missions, compétences, conditions et modalités de candidature.'],
+['Publication simple de votre offre, telle que vous l’avez rédigée. L’essentiel pour mettre une offre en ligne.',
+ 'Nous publions votre offre et créons une affiche dédiée, que vous validez avant la mise en ligne.',
+ 'Publication, affiche et épinglage de l’offre jusqu’à la date limite de candidature. Épinglage selon disponibilité.',
+ 'Votre offre est publiée en priorité, avec une affiche, pour lancer un recrutement sans attendre.',
+ 'Nous publions trois offres pour des postes différents, afin de recruter plusieurs profils en une seule commande.',
+ 'Nous publions cinq offres, pour les entreprises qui recrutent régulièrement.',
+ 'Une formule complète pour une offre, qui regroupe plusieurs de nos prestations de recrutement. Nous en précisons le détail avec vous sur WhatsApp avant de commencer.'],
+['Pendant un mois, nous publions cinq de vos offres ou annonces, aux dates convenues avec vous.',
+ 'Sur un mois : 8 publications, 4 affiches et 2 épinglages, planifiés avec vous selon vos recrutements. Épinglage selon disponibilité.',
+ 'Sur un mois : 10 publications, 10 affiches et un épinglage dont la durée est convenue ensemble, pour un recrutement très actif.'],
+['Nous concevons un visuel pour promouvoir votre activité, votre produit ou votre offre, avec vos couleurs et votre logo.',
+ 'Nous créons un flyer numérique, prêt à partager sur Facebook, sur WhatsApp ou par message.',
+ 'Nous dessinons une bannière aux dimensions de la couverture de votre page, avec votre nom, votre logo et votre message.',
+ 'Nous créons un logo épuré à partir du nom de votre activité et de vos couleurs préférées, livré prêt à utiliser.',
+ 'Nous rédigeons un texte accrocheur pour vos promotions : message clair, ton adapté à votre public, appel à l’action.',
+ 'Nous publions votre publicité en ligne, à la date convenue avec vous. Le budget Facebook Ads n’est pas inclus.',
+ 'Nous créons une story verticale pour mettre en avant une promotion ou une actualité auprès de votre audience.',
+ 'Cinq visuels créés dans un style cohérent, à un tarif plus avantageux qu’à l’unité.',
+ 'Dix visuels au style cohérent, pour alimenter vos publications dans la durée, à un tarif plus avantageux qu’à l’unité.'],
+['Pendant un mois, nous animons votre page Facebook avec 5 publications planifiées avec vous.',
+ 'Pendant un mois, nous animons votre page Facebook avec 10 publications planifiées avec vous.',
+ 'Pendant un mois, nous animons votre page Facebook avec 15 publications planifiées avec vous.',
+ 'Nous gérons votre page pendant un mois et créons les visuels de vos publications. Tarif de base, ajusté selon le nombre de visuels.',
+ 'Nous prenons en charge votre page pendant un mois : publications, visuels et animation. Le tarif final dépend de vos besoins et se confirme sur WhatsApp. Budget Facebook Ads non inclus.']
+];
+// Objectif de chaque catégorie
+const O = [
+'Faire connaître votre offre d’emploi aux candidats grâce à une publication claire, soignée et bien visible sur la page.',
+'Aider les candidats à présenter leur dossier de façon claire et à repérer des offres qui leur correspondent.',
+'Donner à votre annonce un visuel net, facile à lire et facile à partager en ligne.',
+'Faire passer clairement le message de votre annonce : un texte correct, complet et agréable à lire.',
+'Regrouper plusieurs prestations de recrutement dans une seule formule, dont le contenu est connu avant de commander.',
+'Maintenir vos recrutements visibles pendant un mois, avec des publications planifiées à l’avance avec vous.',
+'Promouvoir votre activité avec des visuels et des textes soignés, cohérents avec votre image.',
+'Garder votre page Facebook active et professionnelle pendant un mois, sans que vous ayez à la gérer vous-même.'
+];
+// Avantage propre à chaque catégorie
+const V = [
+'Votre offre est mise en ligne pour vous : vous gagnez du temps.',
+'Un dossier plus clair et plus professionnel, à envoyer en confiance.',
+'Une annonce qui se distingue dans le fil d’actualité.',
+'Une annonce sans fautes, qui aide à limiter les candidatures hors sujet.',
+'Un contenu défini à l’avance : vous savez ce que vous commandez.',
+'Un rythme de publication régulier, sans avoir à tout relancer vous-même.',
+'Des visuels cohérents, prêts à publier.',
+'Une page régulièrement animée, sans que vous y passiez du temps.'
+];
+// Prestations incluses, service par service (éléments séparés par « ; »)
+const I = [
+['Publication de votre offre telle que vous l’avez rédigée;Vérification que l’essentiel figure : poste, contact, date limite',
+ 'Correction des fautes et formulation plus claire;Structure lisible;Validation de la version finale par vous;Publication de l’offre',
+ 'Création d’une affiche conçue pour votre offre;Validation de l’affiche par vous avant la mise en ligne;Publication de l’offre avec son affiche',
+ 'Publication de l’offre;Création de l’affiche;Épinglage en haut de la page jusqu’à la date limite, selon disponibilité',
+ 'Mise en ligne rapide et prioritaire, selon disponibilité;Pour un besoin de recrutement pressant',
+ 'Remise en ligne d’une offre déjà publiée;Texte repris tel quel ou mis à jour',
+ 'Maintien de votre offre visible sur une période convenue ensemble;Plus de temps pour les candidats',
+ 'Partage de votre offre dans plusieurs groupes emploi;Une seule campagne'],
+['Réception de votre CV;Recherche d’offres adaptées à votre profil pendant 30 jours;Transmission des offres trouvées',
+ 'Envoi de votre dossier aux recruteurs concernés;Suivi pendant 30 jours;Aucun appel, entretien ni embauche garanti',
+ 'Rédaction et mise en page de votre CV à partir de vos informations;Parcours, compétences et formations;Fichier prêt à envoyer',
+ 'Lettre rédigée pour le poste visé et votre profil;Prête à joindre à votre candidature',
+ 'CV et lettre de motivation dans un style assorti;Candidature cohérente et soignée'],
+['Titre, informations principales et contact;Format prêt à partager en ligne',
+ 'Mise en page sur mesure;Couleurs adaptées à l’image de votre entreprise',
+ 'Modification des textes, dates ou éléments demandés;Livraison de la nouvelle version',
+ 'Ajout de votre logo;Ajout de vos coordonnées : téléphone, adresse, page;Reste du visuel inchangé',
+ 'Série d’affiches au style cohérent;Tarif réduit dès 3 affiches;Tarif final confirmé selon le nombre d’affiches'],
+['Correction de l’orthographe et de la grammaire;Tournures maladroites améliorées;Sens de l’annonce conservé',
+ 'Annonce rédigée à partir de vos informations;Texte clair et professionnel, prêt à publier',
+ 'Missions;Profil recherché;Conditions du poste',
+ 'Titres, paragraphes et listes;Lecture facile sur téléphone',
+ 'Intitulé du poste, missions et compétences;Conditions et modalités de candidature'],
+['Publication de votre offre, telle que vous l’avez rédigée',
+ 'Publication de l’offre;Affiche dédiée, à valider avant la mise en ligne',
+ 'Publication;Affiche;Épinglage jusqu’à la date limite, selon disponibilité',
+ 'Publication prioritaire de l’offre;Affiche pour la mettre en valeur',
+ 'Publication de 3 offres pour des postes différents;Plusieurs profils recrutés en une commande',
+ 'Publication de 5 offres;Pensé pour les recrutements réguliers',
+ 'Formule complète pour une offre;Regroupe plusieurs de nos prestations de recrutement;Détail confirmé sur WhatsApp avant de commencer'],
+['Publication de 5 de vos offres ou annonces sur un mois;Dates convenues avec vous',
+ '8 publications;4 affiches;2 épinglages, selon disponibilité;Planification selon vos recrutements',
+ '10 publications;10 affiches;1 épinglage de durée convenue ensemble'],
+['Visuel promotionnel pour votre activité, produit ou offre;Vos couleurs et votre logo',
+ 'Flyer numérique;Prêt à partager sur Facebook, WhatsApp ou par message',
+ 'Bannière aux dimensions de la couverture de votre page;Votre nom, votre logo et votre message',
+ 'Logo épuré créé à partir du nom de votre activité;Vos couleurs préférées;Livré prêt à utiliser',
+ 'Message clair et accrocheur;Ton adapté à votre public;Appel à l’action',
+ 'Publication de votre publicité en ligne;Date convenue avec vous;Budget Facebook Ads non inclus',
+ 'Story verticale;Pour une promotion ou une actualité',
+ 'Cinq visuels dans un style cohérent;Tarif plus avantageux qu’à l’unité',
+ 'Dix visuels au style cohérent;Pour alimenter vos publications dans la durée;Tarif plus avantageux qu’à l’unité'],
+['5 publications sur un mois;Planifiées avec vous',
+ '10 publications sur un mois;Planifiées avec vous',
+ '15 publications sur un mois;Planifiées avec vous',
+ 'Gestion de la page pendant un mois;Création des visuels de vos publications;Tarif de base, ajusté selon le nombre de visuels',
+ 'Prise en charge de la page pendant un mois;Publications, visuels et animation;Tarif final confirmé sur WhatsApp;Budget Facebook Ads non inclus']
+];
+// Ce que le client doit nous transmettre, par catégorie
+const N = [
+  'Le texte de votre offre (poste, missions, profil, date limite, contact) et, si possible, votre logo.',
+  'Votre CV ou vos informations (parcours, diplômes, expériences) et le type de poste recherché.',
+  'Le texte à afficher, votre logo, vos couleurs et, s’il existe, l’affiche à modifier.',
+  'Votre brouillon ou les informations clés du poste : intitulé, missions, profil, conditions.',
+  'Les détails de vos offres (poste, missions, profil, date limite) et votre logo.',
+  'Le nom de votre page ou entreprise, le rythme de publication souhaité et vos contenus.',
+  'Votre message, vos coordonnées, votre logo, vos couleurs et des exemples qui vous plaisent.',
+  'Le lien de votre page, vos objectifs et les informations à mettre en avant.'
+];
+
+// Page d’un service : adresse #/s/catégorie-service, le bouton retour du navigateur fonctionne
+const mn = $('main'), sp = $('#sp'), spc = $('#spc');
+let base = document.title, ys = 0;
+// Services complémentaires : descriptions et prestations en français
+D.push([]); I.push([]); O.push(CAT8.o); V.push(CAT8.v); N.push(CAT8.n);
+X.forEach(x => { D[x.c].push(x.df); I[x.c].push(x.if); });
+const COL = [...'01234567890123456789'].map(x => `<i>${x}</i>`).join(''),
+  odo = s => { let k = 0; return s.replace(/\d/g, d => `<span class="dg" style="--d:${d};--k:${k++}"><span>${COL}</span></span>`); };
+const route = keep => {
+  const m = /^#\/s\/(\d+)-(\d+)$/.exec(location.hash), r = m && C[m[1]] && C[m[1]][2][m[2]];
+  if (r) {
+    if (!mn.hidden) ys = scrollY;
+    const [fa, fd, fp, , k2] = r.split('|'), [ft, k] = C[m[1]], tv = /jour|mois|limite|dispo|convenir/i.test(fd), n = (fp.match(/\d/g) || []).length,
+      [a, d] = mg ? SM[m[1]][m[2]].split('|') : [fa, fd], p = price(fp), t = L(ft, CATM[m[1]]),
+      msg = L(`Bonjour JobLine, je souhaite commander le service « ${a} » (${d}) au tarif de ${p}. Merci de me confirmer la suite.`,
+        `Salama JobLine, te hanao baiko ny serivisy « ${a} » (${d}) amin’ny vidiny ${p} aho. Azafady, ampahafantaro ahy ny manaraka.`);
+    spc.innerHTML = `<a class="bk" href="#services">${ic('back')}${L('Tous les services', 'Serivisy rehetra')}</a>
+<div class="sd">
+ <header><p class="kc"><span class="ico">${ic(k2 || k)}</span>${t}</p><h1 tabindex="-1">${a}</h1><span class="du">${d}</span></header>
+ <aside class="card od"><p>${L('Tarif', 'Vidiny')}</p><p class="pr" style="--n:${n}"><span class="vh">${p}</span><span aria-hidden="true">${odo(p)}</span></p><button class="btn" type="button" data-wa="${msg}">${ic('wa')}${L('Commander', 'Mandefa baiko')}</button><p class="sm">${L('WhatsApp s’ouvre avec ce service et son tarif déjà indiqués dans le message.', 'Misokatra ny WhatsApp miaraka amin’ity serivisy ity sy ny vidiny voasoratra ao amin’ny hafatra.')}</p></aside>
+ <div class="dt"><h2 class="in">${L('Description du service', 'Fanazavana ny serivisy')}</h2>
+  <h3>${L('Objectif', 'Tanjona')}</h3><p>${L(O[m[1]], OM[m[1]])}</p>
+  <h3>${L('Fonctionnement', 'Fomba fiasa')}</h3><p>${L(D[m[1]][m[2]], DM[m[1]][m[2]])}</p>
+  <h3>${L('Prestations incluses', 'Ny ao anatin’ny serivisy')}</h3><ul>${L(I[m[1]][m[2]], IM[m[1]][m[2]]).split(';').map(x => `<li>${x}</li>`).join('')}</ul>
+  <h3>${L('Vos avantages', 'Ny tombontsoanao')}</h3><ul><li>${L(V[m[1]], VM[m[1]])}</li><li>${L('Tarif en ariary clairement affiché, confirmé avec vous avant tout paiement.', 'Vidiny amin’ny ariary aseho mazava, hamafisina aminao alohan’ny fandoavana rehetra.')}</li><li>${L('Échange direct sur WhatsApp, sans formulaire à remplir.', 'Fifanakalozan-kevitra mivantana amin’ny WhatsApp, tsy misy taratasy fameno.')}</li></ul>
+  <p class="note">${mg
+    ? `<b>${tv ? 'Faharetana' : 'Habetsany'}:</b> ${d}. ${tv ? '' : 'Ny fotoana hanaovana azy dia hamafisina aminao amin’ny WhatsApp rehefa mandefa baiko. '}<b>Vidiny:</b> <mark class="hl" style="--n:${n}">${p}</mark>${/^Dès/.test(fp) ? ' (vidiny fanombohana: ny vola farany dia hamafisina amin’ny WhatsApp alohan’ny handoavana)' : ''}. Fandoavana amin’ny MVola na Airtel Money alohan’ny famoahana na ny fanomanana.`
+    : `<b>${tv ? 'Durée' : 'Quantité'} :</b> ${d}. ${tv ? '' : 'Le délai de réalisation est confirmé avec vous sur WhatsApp à la commande. '}<b>Tarif :</b> <mark class="hl" style="--n:${n}">${p}</mark>${/^Dès/.test(fp) ? ' (tarif de départ : le montant final est confirmé sur WhatsApp avant paiement)' : ''}. Paiement par MVola ou Airtel Money avant publication ou prise en charge.`}</p>
+  <h3>${L('Étapes pour en bénéficier', 'Dingana arahina')}</h3>
+  <ol>${mg
+    ? '<li>Tsindrio ny « Mandefa baiko »: misokatra ny WhatsApp miaraka amin’ny hafatra voasoratra mialoha.</li><li>Hamafisinay aminao ny antsipiriany. Atao amin’ny MVola na Airtel Money ny fandoavana alohan’ny famoahana na ny fanomanana.</li><li>Ataonay ny serivisy ary ampitainay aminao.</li>'
+    : '<li>Vous cliquez sur « Commander » : WhatsApp s’ouvre avec votre message déjà rédigé.</li><li>Nous confirmons les détails avec vous. Le paiement par MVola ou Airtel Money se fait avant publication ou prise en charge.</li><li>Nous réalisons le service et vous le livrons.</li>'}</ol>
+  <h3>${L('À nous transmettre', 'Ny hatolotrao anay')}</h3><p>${L(N[m[1]], NM[m[1]])}</p></div>
+</div>`;
+    mn.hidden = true; sp.hidden = false;
+    document.title = a + ' – Jobline';
+    if (!keep) { scrollTo({ top: 0, behavior: 'instant' }); $('h1', spc).focus({ preventScroll: true }); }
+  } else if (mn.hidden) {
+    mn.hidden = false; sp.hidden = true;
+    document.title = base;
+    const h = location.hash;
+    if (ys && (!h || h === '#services')) scrollTo({ top: ys, behavior: 'instant' });
+    else (document.getElementById(h.slice(1)) || document.body).scrollIntoView();
+    ys = 0;
+  }
+  document.body.classList.toggle('sv', !!r);
+};
+addEventListener('hashchange', () => route());
+route();
+
+// Menu mobile
+const nav = $('#nav'), mb = $('#menu'),
+  setMenu = o => { nav.classList.toggle('open', o); mb.setAttribute('aria-expanded', o); };
+mb.onclick = () => setMenu(!nav.classList.contains('open'));
+nav.onclick = e => e.target.matches('a') && setMenu(false);
+addEventListener('keydown', e => e.key === 'Escape' && setMenu(false));
+
+// Retour en haut
+const up = $('#up');
+const hd = $('.hd');
+addEventListener('scroll', () => { up.classList.toggle('show', scrollY > 500); hd.classList.toggle('sc', scrollY > 8); }, { passive: true });
+
+// Copie des numéros de paiement
+const ts = $('#toast');
+let tm;
+$$('[data-copy]').forEach(b => b.onclick = async () => {
+  const v = b.dataset.copy;
+  try { await navigator.clipboard.writeText(v); }
+  catch {
+    const t = document.createElement('textarea');
+    t.value = v; document.body.append(t); t.select();
+    try { document.execCommand('copy'); } catch {}
+    t.remove();
+  }
+  ts.textContent = L('Numéro copié dans le presse-papiers', 'Voadika ny laharana');
+  ts.classList.add('show');
+  clearTimeout(tm);
+  tm = setTimeout(() => ts.classList.remove('show'), 2200);
+});
+
+// Apparition progressive au défilement
+const io = 'IntersectionObserver' in window && new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+}), { threshold: .1 });
+$$('.rv').forEach(el => io ? io.observe(el) : el.classList.add('in'));
+
+// Langue : traduction des textes fixes, régénération des contenus dynamiques
+const TXT = new WeakMap(), AT = new WeakMap(), lg = $('#lg'),
+  FL = { mg: '<rect width="30" height="20" fill="#fff"/><rect x="10" width="20" height="10" fill="#fc3d32"/><rect x="10" y="10" width="20" height="10" fill="#007e3a"/>',
+    fr: '<rect width="10" height="20" fill="#0055a4"/><rect x="10" width="10" height="20" fill="#fff"/><rect x="20" width="10" height="20" fill="#ef4135"/>' };
+const applyStatic = () => {
+  const w = document.createTreeWalker(document.body, 4, { acceptNode: n => n.parentElement.closest('#cats,#chips,#spc,.tw,script,style,noscript') ? 2 : 1 });
+  for (let n; n = w.nextNode();) {
+    if (!TXT.has(n)) TXT.set(n, n.data);
+    const o = TXT.get(n), k = o.trim();
+    n.data = mg && M[k] ? o.replace(k, M[k]) : o;
+  }
+  $$('[aria-label],[data-wa]').forEach(el => {
+    if (el.closest('#cats,#spc') || el === lg) return;
+    const o = AT.get(el) || {};
+    ['aria-label', 'data-wa'].forEach(a => {
+      if (!el.getAttribute(a)) return;
+      if (!(a in o)) o[a] = el.getAttribute(a);
+      el.setAttribute(a, mg && M[o[a]] ? M[o[a]] : o[a]);
+    });
+    AT.set(el, o);
+  });
+};
+const setLang = on => {
+  mg = on;
+  try { localStorage.setItem('jl-lang', on ? 'mg' : 'fr'); } catch {}
+  if (on) name = 'jl-lang:mg'; else if (name === 'jl-lang:mg') name = '';
+  document.documentElement.lang = on ? 'mg' : 'fr';
+  base = TT[+on];
+  $('meta[name=description]').content = MD[+on];
+  lg.innerHTML = `<svg class="flag" viewBox="0 0 30 20" aria-hidden="true">${FL[on ? 'fr' : 'mg']}</svg><span>${on ? 'FR' : 'MG'}</span>`;
+  lg.setAttribute('aria-label', on ? 'Hiverina amin’ny teny frantsay' : 'Passer le site en malgache');
+  lg.title = on ? 'Français' : 'Malagasy';
+  applyStatic();
+  typeHero(HT[+on]);
+  renderCats(1);
+  renderChips();
+  route(1);
+  if (!mn.hidden) document.title = base;
+};
+lg.onclick = () => setLang(!mg);
+if (mg) setLang(true);
+
+$('#y').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
